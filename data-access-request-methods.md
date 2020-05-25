@@ -3,14 +3,15 @@
 This page describes the methods used to generate the data serviced to researchers through data requests (DRs). The samples in the Hartwig database are collected via three clinical studies: CPCT-02, DRUP-01 and WIDE.
 Patients in these studies have given explicit consent for whole genome sequencing and data sharing for cancer research purposes.
 
-These studies deliver clinical data to Hartwig to accompany the whole genome analysis. The clinical data is curated and standardized by Hartwig as part of the data ingestion algorithms found in our [Patient DB](https://github.com/hartwigmedical/hmftools/tree/master/patient-db) .
+These studies deliver clinical data to Hartwig to accompany the whole genome analysis. The clinical data is curated and standardized by Hartwig as part of the data ingestion algorithms found in our [Patient DB](https://github.com/hartwigmedical/hmftools/tree/master/patient-db).
 
-## Contents
+### Contents
 - [CPCT-02](#cpct-02-nct01855477)
 - [DRUP-01](#drup-01-NCT02925234)
 - [WIDE](#wide)
 - [Sequencing workflow](#sequencing-workflow)
 - [Bioinformatics workflow](#bioinformatics-workflow)
+
 
 ## CPCT-02 ([NCT01855477](https://clinicaltrials.gov/ct2/show/NCT01855477))
 
@@ -97,5 +98,5 @@ Strelka v1 was run to call somatic SNVs and small INDELs using non-default (redu
 [LINX](https://github.com/hartwigmedical/hmftools/tree/master/sv-linx) v1.x was run to analyse the structural variants.    
   
 For more detailed information on tools and parameters used:
- - For germline SNV/INDEL calling and somatic SNV/INDEL calling please see the 'Methods' section of [HMF Pan Cancer Paper](https://www.nature.com/articles/s41586-019-1689-y)
- - For GRIDSS/Purple/LINX see [HMF Toolkit Paper](https://www.biorxiv.org/content/10.1101/781013v1)
+- For germline SNV/INDEL calling and somatic SNV/INDEL calling please see the 'Methods' section of [HMF Pan Cancer Paper](https://www.nature.com/articles/s41586-019-1689-y).
+- For GRIDSS/Purple/LINX see [HMF Toolkit Paper](https://www.biorxiv.org/content/10.1101/781013v1).
