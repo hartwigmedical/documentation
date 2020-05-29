@@ -280,7 +280,7 @@ The first time, its best to create a bucket via the console:
 ![Create a bucket](https://github.com/hartwigmedical/gcpworkshop/blob/master/images/storage-demo-1.png)
 
 Important concepts:
-* The region is where your bucket will be created. Best to pick a local region.
+* The region is where your bucket will be created. Best to pick `europe-west4`.
 * The storage class impacts how your data is stored. Standard will be used for frequently accessed data. Nearline and Coldline for less 
 accessed.
 * The access control can be per bucket or per file, normally per bucket is fine.
