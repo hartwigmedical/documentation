@@ -16,7 +16,7 @@ Note: more details on the methods used to generate both the genomic and clinical
   - [Aligned readout data (CRAM format)](#aligned-readout-data-cram-format)
   - [RNAseq data (FASTQ format)](#rnaseq-data-fastq-format)
   - [More information](#more-information)
-* [Tips on accessing the data trough GCP](#tips-on-accessing-the-data-trough-GCP)
+* [Tips on accessing the data through GCP](#tips-on-accessing-the-data-through-GCP)
   - [Accessing the data](#accessing-the-data)
   - [Scaling Analysis](#scaling-analysis)
 * [Other tips on working with GCP](#other-tips-on-working-with-GCP)
@@ -98,7 +98,7 @@ We share the SNVs and small INDELs called from the reference sample using GATK h
 Aligned readout data will be made available per sample via GCP.
 
 Some notes to keep in mind:
-- Files can be very large (up to 300GB) so consider this when you want to egress the files (comes with costs, see [Tips on accessing the data trough GCP](#tips-on-accessing-the-data-trough-GCP)).
+- Files can be very large (up to 300GB) so consider this when you want to egress the files (comes with costs, see [Tips on accessing the data through GCP](#tips-on-accessing-the-data-through-GCP)).
 
 Example loading CRAM file in IGV:
 - Create the links for the CRAM and accompanying CRAI file (by clicking the most right icon next to a run)
@@ -113,7 +113,7 @@ Please find more details on the methods used to generate both the genomic and cl
 RNAseq data will be made available per sample via GCP.
 
 Some notes to keep in mind:
-- Files can be very large  so consider this when you want to egress the files (comes with costs, see [Tips on accessing the data trough GCP](#tips-on-accessing-the-data-trough-GCP)).
+- Files can be very large  so consider this when you want to egress the files (comes with costs, see [Tips on accessing the data through GCP](#tips-on-accessing-the-data-through-GCP)).
 
 ### More information
 - For source code of our analysis pipeline see our [pipeline5 repo](https://github.com/hartwigmedical/pipeline5).
@@ -122,7 +122,7 @@ Some notes to keep in mind:
 - For various resource files used in the analysis see our [resources page](https://resources.hartwigmedicalfoundation.nl/).
 
 
-## Tips on accessing the data trough GCP
+## Tips on accessing the data through GCP
 
 - [Accessing the data](#accessing-the-data)
 - [Scaling Analysis](#scaling-analysis)
