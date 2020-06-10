@@ -1,4 +1,4 @@
-# Hartwig Medical Foundation - Manual Google Cloud Platform
+# Getting Started with Google Cloud Platform
 
 - [Introduction](#introduction)
 - [Self-Service](#self-service)
