@@ -1,4 +1,4 @@
-# documentation Hartwig Medical Foundation
+# Hartwig Medical Foundation
 
 This documentation repository contains methonds, instructions, manuals and standard formats used within the Hartwig Medical Foundation.
 
