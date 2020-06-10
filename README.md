@@ -1,5 +1,3 @@
-# Hartwig Medical Foundation
-
 This documentation repository contains methonds, instructions, manuals and standard formats used within the Hartwig Medical Foundation.
 
 * [Getting a Google Account](getting-a-Google-account.md): This document contains instructions on how to set up a Google Account for accessing the HMF data set.
