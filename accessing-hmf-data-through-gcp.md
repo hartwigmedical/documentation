@@ -6,7 +6,6 @@
 * [Accessing Data](#accessing-data)
     - [Data request bucket](#data-request-bucket)
     - [Large files and the Manifest JSON](#manifest-json)
-* [Creating a VM](#creating-a-vm)
 * [GCP Costs](#costs)
 * [Privacy and Security](#privacy-and-security)
 
@@ -98,6 +97,32 @@ bucket = client.get_bucket('gs://hmf-dr-123')
 manifest_json =  bucket.get_blob('manifest.json')
 data = json.loads(manifest_json)
 ```
+
+The intent of the manifest is to enable the use of GCP to scale analysis horizontally across virtual machines and avoid the time and expense of large downloads. At HMF this generally follows the pattern:
+* Create a VM with a predefined startup script.
+* Within the startup script, download the data you need
+* Within the startup script, run your analysis
+* Within the startup script, upload the results to your own bucket
+* Terminate the VM
+
+We've also seen parse the manifest into [Nextflow](https://www.nextflow.io/) configuration which manage the GCP details for you. 
+We kept things simple by design, we hope to see many creative ways the use the manifest in analysis. 
+
+### GCP Costs
+
+When using any cloud platform, its very important to understand the cost of operations. The good news is, GCP is very competitively priced and will also help alleviate load on internal HPCs and staff.
+
+GCP has a very simple pricing model (linear on CPU, memory and storage) and you can find all the details [here](https://cloud.google.com/pricing) 
+
+We suggest using the [pricing calculator](https://cloud.google.com/products/calculator) to get an estimate for your workload. That said, here are some key costs to keep in mind:
+- Using a 32cpu 120GB virtual machine for one hour will cost about $1.60/€1.50
+- Storing 1TB of data for a month will cost about $20/€18.
+- *Downloading 1TB of data to a local server will cost about $120/€106*
+
+When using GCP compute resources we strongly recommend using [Pre-emptible VMs](https://cloud.google.com/compute/docs/instances/preemptible), which will save 80% on CPU and memory. By adding some simple
+automation to restart these VMs when GCP reclaims them we can now run the HMF clinical tumor/normal variant pipeline (90x/30x depth) for under €30 per sample.
+
+### Privacy and Security
 
 
 
