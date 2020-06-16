@@ -114,16 +114,24 @@ When using any cloud platform, its very important to understand the cost of oper
 
 GCP has a very simple pricing model (linear on CPU, memory and storage) and you can find all the details [here](https://cloud.google.com/pricing) 
 
-We suggest using the [pricing calculator](https://cloud.google.com/products/calculator) to get an estimate for your workload. That said, here are some key costs to keep in mind:
-- Using a 32cpu 120GB virtual machine for one hour will cost about $1.60/€1.50
-- Storing 1TB of data for a month will cost about $20/€18.
-- *Downloading 1TB of data to a local server will cost about $120/€106*
+When using GCP compute resources we strongly recommend using [Pre-emptible VMs](https://cloud.google.com/compute/docs/instances/preemptible), which will save 80% on CPU and memory. 
 
-When using GCP compute resources we strongly recommend using [Pre-emptible VMs](https://cloud.google.com/compute/docs/instances/preemptible), which will save 80% on CPU and memory. By adding some simple
-automation to restart these VMs when GCP reclaims them we can now run the HMF clinical tumor/normal variant pipeline (90x/30x depth) for under €30 per sample.
+We suggest using the [pricing calculator](https://cloud.google.com/products/calculator) to get an estimate for your workload. That said, here are some key costs to keep in mind:
+- Using a 32cpu 120GB virtual machine for one hour will cost about $1.60 or $0.30 if pre-emptible.
+- Storing 1TB of data for a month will cost about $20.
+- *Downloading 1TB of data to a local server will cost about $120/€106*
+- Aligning 100 samples sequenced to 90x with BWA and storing CRAM for 1 year costs approximately $3100 (~$700 for the compute and $2400 storage).
 
 ### Privacy and Security
 
+When moving to a cloud platform and dealing with personal health data, many have concerns about privacy and security compared to an on-premise storage solution. The reality is that Google has
+much more expertise and resource to secure our data and processing than we could provide internally. Have a read of their [white paper](https://cloud.google.com/security/overview/whitepaper) for more details.
+
+That said, we have added additional security and privacy measures to ensure our data is only ever accessed by intended parties:
+- All private data is encrypted with our own key using [Customer Managed Encryption](https://cloud.google.com/storage/docs/encryption/customer-managed-keys). This ensures that no one at Google can access our data.
+- Any access to private data is logged using [Audit Logging](https://cloud.google.com/logging/docs/audit). 
+- [Resource location restriction](https://cloud.google.com/resource-manager/docs/organization-policy/defining-locations) to ensure the data always resides in the EU.
+- All VMs we create have private IP and reside on a private network, with no access to the public internet.
 
 
 
