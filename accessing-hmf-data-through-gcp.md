@@ -5,8 +5,8 @@
 * [Logging in to GCP](#logging-in-to-GCP)
 * [Accessing Data](#accessing-data)
     - [Data request bucket](#data-request-bucket)
-    - [Large files and the Manifest JSON](#manifest-json)
-* [GCP Costs](#costs)
+    - [Large files and the Manifest JSON](#large-files-and-the-manifest-json)
+* [GCP Costs](#gcp-costs)
 * [Privacy and Security](#privacy-and-security)
 
 ## Overview
