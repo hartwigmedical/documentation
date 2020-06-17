@@ -7,7 +7,7 @@ These studies deliver clinical data to Hartwig to accompany the whole genome ana
 
 ### Contents
 - [CPCT-02](#cpct-02-nct01855477)
-- [DRUP-01](#drup-01-NCT02925234)
+- [DRUP-01](#drup-01-nct02925234)
 - [WIDE](#wide)
 - [Sequencing workflow](#sequencing-workflow)
 - [Bioinformatics workflow](#bioinformatics-workflow)

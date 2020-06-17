@@ -2,10 +2,10 @@
 
 ## Contents
 * [Overview](#overview)
-* [Logging in to GCP](#logging-in-to-GCP)
+* [Logging in to GCP](#logging-in-to-gcp)
 * [Accessing Data](#accessing-data)
     - [Data request bucket](#data-request-bucket)
-    - [Large files and the Manifest JSON](#large-files-and-the-manifest-json)
+    - [Manifest JSON](#manifest-json)
 * [GCP Costs](#gcp-costs)
 * [Privacy and Security](#privacy-and-security)
 
@@ -71,7 +71,7 @@ To copy the files to another bucket you've created in your own project:
 gsutil  -u your-project cp gs://hmf-dr-123/metadata.tar gs://your-new-bucket/
 ```
 
-### Large files and the Manifest JSON
+### Manifest JSON
 
 When dealing with the aligned reads and RNASeq data, our key challenge is avoid any duplication of the data and costs associated. This means we need to expose the data directly to the requester from our own buckets.
 
