@@ -1,0 +1,57 @@
+{
+  "id": "example",
+  "bundeld": [
+    {
+      "gsutilUrl": "gs://hmf-dr-example/metadata.tar",
+      "tags": [
+        "metadata",
+        "tar"
+      ]
+    }
+  ],
+  "accounts": [
+    {
+      "email": "user@google.com"
+    }
+  ],
+  "data": [
+    {
+      "patientId": "COLO829v003",
+      "samples": [
+        {
+          "sampleId": "COLO829v003T",
+          "data": [
+            {
+              "gsutilUrl": "gs://hmf-output-test/COLO_VALIDATION_5_7_1314/COLO829v003R/aligner/COLO829v003R.cram",
+              "tags": [
+                "DNA",
+                "CRAM"
+              ]
+            },
+            {
+              "gsutilUrl": "gs://hmf-output-test/COLO_VALIDATION_5_7_1314/COLO829v003R/aligner/COLO829v003R.cram.crai",
+              "tags": [
+                "DNA",
+                "CRAI"
+              ]
+            },
+            {
+              "gsutilUrl": "gs://hmf-output-test/COLO_VALIDATION_5_7_1314/COLO829v003T/aligner/COLO829v003T.cram",
+              "tags": [
+                "DNA",
+                "CRAM"
+              ]
+            },
+            {
+              "gsutilUrl": "gs://hmf-output-test/COLO_VALIDATION_5_7_1314/COLO829v003T/aligner/COLO829v003T.cram.crai",
+              "tags": [
+                "DNA",
+                "CRAI"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
