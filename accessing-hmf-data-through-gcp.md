@@ -19,9 +19,11 @@ and we suggest getting background on the key services in GCP via the following t
 * [Google Cloud Storage](https://cloud.google.com/storage)
 * [Google Compute Engine](https://cloud.google.com/compute) 
  
-We assume you have already acquired and account, if not please read our [Getting a Google Account](getting-a-Google-account.md) page in this documentation repository. 
+We assume you have already acquired an account, if not please read our [Getting a Google Account](getting-a-Google-account.md) page in this documentation repository. 
 
-This guide will perform all operations via the command line. Please ensure you've installed the Google Cloud SDK.
+This guide will perform all operations via the command line. Please ensure you've installed the [Google Cloud SDK](https://cloud.google.com/sdk) 
+or you can also use the [Cloud Shell](https://cloud.google.com/shell) available in the console. **Note**: The cloud shell runs in a virtual machine, so anything downloaded
+locally will not be persisted to your own computer.
 
 ## Logging in to GCP
 
@@ -55,7 +57,7 @@ You will receive this bucket name from our data request service team, but it wil
 gsutil -u your-project ls gs://hmf-dr-123
 ```
 
-Note the `-u your-project`, this is necessary to assign the billing project to the request for any egress costs (even though an `ls` does not incur egress, all operations still need a billing account ). See the [costs overview](#costs) for more details.
+Note the `-u your-project`, this is necessary to assign the billing project to the request for any egress costs (even though an `ls` does not incur egress, all operations still need a billing account). See the [costs overview](#costs) for more details.
 
 To download files locally or to a VM:
 
@@ -80,7 +82,7 @@ The `manifest.json` is located in each data request bucket. The intention is to 
 The manifest gives you the following information:
 - The unique ID of the data request
 - The accounts which have access to the data in the manifest
-- The GCS urls of the aforementioned TAR files
+- The Google Cloud Storage (GCS) urls of the aforementioned TAR files
 - For each sample in the datarequest
     - The GCS urls of CRAM and CRAI files (if requested and approved)
     - The GCS urls of RNASeq FASTQ files (if requested and approved)
@@ -105,8 +107,8 @@ The intent of the manifest is to enable the use of GCP to scale analysis horizon
 * Within the startup script, upload the results to your own bucket
 * Terminate the VM
 
-We've also seen parse the manifest into [Nextflow](https://www.nextflow.io/) configuration which manage the GCP details for you. 
-We kept things simple by design, we hope to see many creative ways the use the manifest in analysis. 
+We've also seen the manifest parsed into [Nextflow](https://www.nextflow.io/) configuration which manage the GCP details for you. 
+We kept things simple by design, we hope to see many creative analysis implementations with the manifest. 
 
 ### GCP Costs
 
@@ -125,13 +127,15 @@ We suggest using the [pricing calculator](https://cloud.google.com/products/calc
 ### Privacy and Security
 
 When moving to a cloud platform and dealing with personal health data, many have concerns about privacy and security compared to an on-premise storage solution. The reality is that Google has
-much more expertise and resource to secure our data and processing than we could provide internally. Have a read of their [white paper](https://cloud.google.com/security/overview/whitepaper) for more details.
+much more expertise and resources to secure our data and processing than we could provide internally. Have a read of their [white paper](https://cloud.google.com/security/overview/whitepaper) for more details.
 
 That said, we have added additional security and privacy measures to ensure our data is only ever accessed by intended parties:
 - All private data is encrypted with our own key using [Customer Managed Encryption](https://cloud.google.com/storage/docs/encryption/customer-managed-keys). This ensures that no one at Google can access our data.
 - Any access to private data is logged using [Audit Logging](https://cloud.google.com/logging/docs/audit). 
 - [Resource location restriction](https://cloud.google.com/resource-manager/docs/organization-policy/defining-locations) to ensure the data always resides in the EU.
 - All VMs we create have private IP and reside on a private network, with no access to the public internet.
+
+It is the responsibility of the requester to ensure that their environment is set up with adequate security and that they are operating with the License Agreement.
 
 
 
