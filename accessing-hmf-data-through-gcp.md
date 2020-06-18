@@ -29,13 +29,13 @@ locally will not be persisted to your own computer.
 
 Log into the SDK with the following command:
 
-```shell script
+```
 gcloud auth login
 ```
 
 You will be taken to a browser to authenticate. Authenticate with the account with which you applied for the data access. You can check which account is authenticated with:
 
-```shell script
+```
 gcloud auth list
 ``` 
 
@@ -53,7 +53,7 @@ We create a unique bucket for each data request which contains:
 
 You will receive this bucket name from our data request service team, but it will look something like: `hmf-dr-123`, and you can inspect it with gsutil like so:
 
-```shell script
+```
 gsutil -u your-project ls gs://hmf-dr-123
 ```
 
@@ -61,13 +61,13 @@ Note the `-u your-project`, this is necessary to assign the billing project to t
 
 To download files locally or to a VM:
 
-```shell script
+```
 gsutil  -u your-project cp gs://hmf-dr-123/metadata.tar /path/on/your/local/machine/
 ```
 
 To copy the files to another bucket you've created in your own project:
 
-```shell script
+```
 gsutil  -u your-project cp gs://hmf-dr-123/metadata.tar gs://your-new-bucket/
 ```
 
@@ -91,7 +91,7 @@ You can find an example [here](manifest.json)
 
 JSON has good support in most programming languages. For instance with python you can load the manifest straight from GCS into a dict in a few lines:
 
-```python
+```
 import json
 from google.cloud import storage
 client = storage.Client()
