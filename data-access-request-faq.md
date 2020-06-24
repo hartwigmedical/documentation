@@ -42,11 +42,10 @@ We don't personally bill you for accessing our data, but accessing the data thro
 What option to choose depends on your use case and specific requirements. 
 
 ### How much will I get billed for my download?
-A resource that might help you in estimating costs is the [Google Pricing calculator](https://cloud.google.com/products/calculator).
+A resource that might help you in estimating costs is the [Google Pricing calculator](https://cloud.google.com/products/calculator). Another factor that you need to include when estimating cost, is the [cost for egress](https://cloud.google.com/compute/network-pricing).
 
 ### I'm worried about incurring costs on GCP, how can I make sure I stay within budget?
 There is no hard cap to cut off costs at a certain point, but there are several options to monitor your budget within GCP:
 - [Set budgets and budget alerts in GCP](https://cloud.google.com/billing/docs/how-to/budgets?hl=en&visit_id=637285189607967041-935235730&rd=1). This option does not let you cap the budget, but allows you to monitor everything and set reminders at appropriate amounts of money spend.
 - [Examples of automated cost control responses](https://cloud.google.com/billing/docs/how-to/notify). Here you can find examples on shutting down VMs when the bill reaches a certain amount within a project.
-
 
