@@ -1,4 +1,4 @@
-# Accessing Data Through GCP
+# Accessing Data Through Google Cloud Platform
 
 ## Contents
 * [Overview](#overview)
@@ -100,7 +100,7 @@ manifest_json =  bucket.get_blob('manifest.json')
 data = json.loads(manifest_json)
 ```
 
-The intent of the manifest is to enable the use of GCP to scale analysis horizontally across virtual machines and avoid the time and expense of large downloads. At HMF this generally follows the pattern:
+The intent of the manifest is to enable the use of GCP to scale analysis horizontally across virtual machines and avoid the time and expense of large downloads. At Hartwig Medical Foundation this generally follows the pattern:
 * Create a VM with a predefined startup script.
 * Within the startup script, download the data you need
 * Within the startup script, run your analysis

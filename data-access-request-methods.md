@@ -1,4 +1,4 @@
-# HMF Description of Methods
+# Hartwig Medical Foundation Description of Methods
 
 This page describes the methods used to generate the data serviced to researchers through data requests (DRs). The samples in the Hartwig database are collected via three clinical studies: CPCT-02, DRUP-01 and WIDE.
 Patients in these studies have given explicit consent for whole genome sequencing and data sharing for cancer research purposes.
@@ -98,5 +98,5 @@ Strelka v1 was run to call somatic SNVs and small INDELs using non-default (redu
 [LINX](https://github.com/hartwigmedical/hmftools/tree/master/sv-linx) v1.x was run to analyse the structural variants.    
   
 For more detailed information on tools and parameters used:
-- For germline SNV/INDEL calling and somatic SNV/INDEL calling please see the 'Methods' section of [HMF Pan Cancer Paper](https://www.nature.com/articles/s41586-019-1689-y).
-- For GRIDSS/Purple/LINX see [HMF Toolkit Paper](https://www.biorxiv.org/content/10.1101/781013v1).
+- For germline SNV/INDEL calling and somatic SNV/INDEL calling please see the 'Methods' section of [Hartwig Medical Foundation Pan Cancer Paper](https://www.nature.com/articles/s41586-019-1689-y).
+- For GRIDSS/Purple/LINX see [Hartwig Medical Foundation Toolkit Paper](https://www.biorxiv.org/content/10.1101/781013v1).

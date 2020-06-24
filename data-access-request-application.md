@@ -16,7 +16,7 @@
 
 ## Overview and general instructions
 
-This guide is meant to help you fill in the Data Access Request application form via our BizzMine system. If you haven't got an account and would like to get one to start your HMF Data Access Request application, please see [our website](https://www.hartwigmedicalfoundation.nl/applying-for-data/) for the procedure to get started.
+This guide is meant to help you fill in the Data Access Request application form via our BizzMine system. If you haven't got an account and would like to get one to start your Hartwig Medical Foundation Data Access Request application, please see [our website](https://www.hartwigmedicalfoundation.nl/applying-for-data/) for the procedure to get started.
 
 When you have set up an account for our BizzMine system, you can login to: https://hartwigmedicalfoundation.bizzmine.cloud. This brings you to the Data Access Request page. To start your Data Access Request, click the '+' button in the right corner of the screen. A new Data Access Request form will then be loaded and you can start filling out your application using the guidance below. 
 
@@ -36,15 +36,15 @@ Please fill in the details of the main applicant (we see that this is usually th
 Besides the main applicant, we also need details of a person within the same 'Legal entity' (the organisation) that is authorized to sign on its behalf. 
 
 #### 1.3 Name + function + email address of researchers involved in the Project
-Here you will need to list any persons that will be working with the data within the requirements of the License Agreement. Also check the boxes of the people that will have access to the 'raw' HMF data. These people will be registered as 'Download contacts' and are the only ones that are able to access the data within Google Cloud Platform (GCP). The Download Contacts need to create a GCP account on their institutional email address to get access to the data when the Data Access Request is approved.
+Here you will need to list any persons that will be working with the data within the requirements of the License Agreement. Also check the boxes of the people that will have access to the 'raw' Hartwig Medical Foundation data. These people will be registered as 'Download contacts' and are the only ones that are able to access the data within Google Cloud Platform (GCP). The Download Contacts need to create a GCP account on their institutional email address to get access to the data when the Data Access Request is approved.
 
 #### 1.4 Commercial party involvement
 Please indicate if a commercial party is involved in the research project and provide some additional information about the involvement.
 
 ### Part Extra: multi-center (consortium) request
-Please fill in this section if you'd like to collaborate with another 'Legal Entity' (institution/organisation) on the HMF data. The License Agreement that will be drafted when your Data Access Request is approved, will enable both your institutes to work on the HMF data.
+Please fill in this section if you'd like to collaborate with another 'Legal Entity' (institution/organisation) on the Hartwig Medical Foundation data. The License Agreement that will be drafted when your Data Access Request is approved, will enable both your institutes to work on the Hartwig Medical Foundation data.
 
-If you only wish to collaborate on the results of your analysis on the HMF data, you can skip this section and specify the collaboration in section 4.1. 
+If you only wish to collaborate on the results of your analysis on the Hartwig Medical Foundation data, you can skip this section and specify the collaboration in section 4.1. 
 
 ### Part 2: Project proposal
 Please formulate a title and brief summary of your project. Also specify if your project is aimed at discovery, validation or both and provide motivation. 
@@ -55,10 +55,10 @@ Section 2.4 is one of the most important fields of the request. Please describe 
 
 In 2.5, please describe (for lay audience) what the relevance of your project is to the clinic/patient.
 
-The last section, 2.6, needs to be used to describe why you specifically need the HMF data to reach your research goals. Please also motivate the feasibility of the project (are you able to process the amount of data that you requested, do you have the technical expertise/computational power required?).
+The last section, 2.6, needs to be used to describe why you specifically need the Hartwig Medical Foundation data to reach your research goals. Please also motivate the feasibility of the project (are you able to process the amount of data that you requested, do you have the technical expertise/computational power required?).
 
 ### Part 3: Requested data
-Due to the fact that the HMF data is sensitive in nature, we need to make sure to respect the wishes of the patients as stated in their informed consent. This means that we can only give out data that is absolutely nessessary for the research projects that are approved by our Data Access Request procedure (Scientific Board and Data Access Board). Please keep this in mind while filling in the below sections and try to narrow your request to only the patient/treatment/data that you need to get to your results.
+Due to the fact that the Hartwig Medical Foundation data is sensitive in nature, we need to make sure to respect the wishes of the patients as stated in their informed consent. This means that we can only give out data that is absolutely nessessary for the research projects that are approved by our Data Access Request procedure (Scientific Board and Data Access Board). Please keep this in mind while filling in the below sections and try to narrow your request to only the patient/treatment/data that you need to get to your results.
 
 We make a distinction in our database for 'patients' and 'samples'. Multiple samples can be taken from one patient. Some data is linked to a patient, other data is specific to a sample (sequenced biopsy).
 
@@ -94,7 +94,7 @@ For all samples in our database, we give out genomics data that is processed in 
 Please motivate the choices you make above, as this again is taken into account in the approval of your request.
 
 #### 3.4 Minimum number of patients whose data is required for the proposed project
-Please try to make an estimation of the number of patients that you will need to successfully complete your project. Also motivate this estimation. This gives us an indication of the feasibility of your project, using the HMF data. When you send in your application, we will fill in the section 'Number of patients available' based on your patient selection and requirements. 
+Please try to make an estimation of the number of patients that you will need to successfully complete your project. Also motivate this estimation. This gives us an indication of the feasibility of your project, using the Hartwig Medical Foundation data. When you send in your application, we will fill in the section 'Number of patients available' based on your patient selection and requirements. 
 
 #### 3.5 Time you expect to need the requested data for the project
 This again allows us to estimate the feasibility of your project and is also needed for drafting up the License Agreement (we will allow you access to the data for a limited number of years, appropriate to your project). 

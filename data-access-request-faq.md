@@ -1,7 +1,7 @@
 # Frequently Asked Questions
 ## Hartwig Medical Foundation Data Access Requests
 
-This page contains the frequently asked questions regarding HMF Data Access Requests. Please note that this page is not exhaustive and that you should consult your License Agreement regarding the exact agreements that were made between Hartwig Medical Foundation and your institute.
+This page contains the frequently asked questions regarding Hartwig Medical Foundation Data Access Requests. Please note that this page is not exhaustive and that you should consult your License Agreement regarding the exact agreements that were made between Hartwig Medical Foundation and your institute.
 
 - [General Questions](#general-questions)
 - [Google Cloud Platform Questions](#google-cloud-platform-questions)
@@ -9,13 +9,13 @@ This page contains the frequently asked questions regarding HMF Data Access Requ
 
 ## General Questions
 
-### Where can I find information about the procedure for HMF's Data Access Requests?
+### Where can I find information about the procedure for Hartwig Medical Foundation's Data Access Requests?
 You can find all details regarding the Data Access Procedure at [our website](https://www.hartwigmedicalfoundation.nl/applying-for-data/).
 
 ### Is it possible to collaborate while using your data?
 
 Collaboration is possible on the following grounds:
-- The person(s) you are collaborating with will not have access to the raw HMF data that is shared with you through GCP. Only the people that are mentioned in your Data Access Request and registered 'Download Contacts' are allowed to access the raw HMF data. You are allowed to share the results of your analysis.
+- The person(s) you are collaborating with will not have access to the raw Hartwig Medical Foundation data that is shared with you through GCP. Only the people that are mentioned in your Data Access Request and registered 'Download Contacts' are allowed to access the raw Hartwig Medical Foundation data. You are allowed to share the results of your analysis.
 - If you need your collaborator to have access to the raw data as well, please add him/her as a 'Download contact'. For a collaborator to be added as a 'Download contact', he/she needs to be appointed within the same 'Legal Entity' or institution. See instructions [on this page, section 'New User procedure'](https://www.hartwigmedicalfoundation.nl/applying-for-data/). 
 - If your collaborator does not work at the same institute (or 'Legal Entity'), you need to put in a new Data Access Request and add your collaborator in the 'Consortium request' part of the application. A License Agreement will be drafted that allows people from multiple institutions to collaborate on analysing the raw data.
 

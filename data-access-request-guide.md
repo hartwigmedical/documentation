@@ -1,5 +1,5 @@
 
-# HMF Data Request Guide 
+# Hartwig Medical Foundation Data Access Request Guide 
 
 This page provides practical information on how to access / work with the data that will be made available to you within the context of a Data Access Request (DR) from Hartwig Medical Foundation. 
 
@@ -18,8 +18,8 @@ Note: more details on the methods used to generate both the genomic and clinical
   - [More information](#more-information)
 
 ## General Notes
- - Please be aware that the sample IDs provided to you are not publicly shareable. In case you want to publish something with respect to a specific sample from the HMF database you need to use the HMF Sample ID for this. For newer DRs these have been made available; for older requests these can be requested for the samples you have been provided. 
- - Internally at HMF we load up all data into a MySQL database. The scheme and code to set this up yourself can be found on our [resources page](https://resources.hartwigmedicalfoundation.nl/).
+ - Please be aware that the sample IDs provided to you are not publicly shareable. In case you want to publish something with respect to a specific sample from the Hartwig Medical Foundation database you need to use the Hartwig Sample ID for this. For newer DRs these have been made available; for older requests these can be requested for the samples you have been provided. 
+ - Internally at Hartwig, we load up all data into a MySQL database. The scheme and code to set this up yourself can be found on our [resources page](https://resources.hartwigmedicalfoundation.nl/).
  
 Please use the **unique ID** given to your request (eg. "DR-XXX") in any communication with us about your data request.
 
@@ -84,7 +84,7 @@ We share the SNVs and small INDELs called from the reference sample using GATK h
 Aligned readout data will be made available per sample via GCP.
 
 Some notes to keep in mind:
-- Files can be very large (up to 300GB) so consider this when you want to egress the files (comes with costs, see [Accessing HMF data through GCP](./accessing-hmf-data-through-gcp.md)).
+- Files can be very large (up to 300GB) so consider this when you want to egress the files (comes with costs, see [Accessing Hartwig Medical Foundation data through GCP](./accessing-hartwig-data-through-gcp.md)).
 
 ##### Example loading CRAM file in IGV:
 It is possible to directly load CRAM files into IGV using the Google Cloud Storage URL. Please note that to do this, IGV requires your permission to access both Google Cloud Storage and Google Drive. It is at this time not possible to exclude Google Drive from these permissions. To load a CRAM file directly from Google Cloud Storage:
@@ -102,10 +102,10 @@ Please find more details on the methods used to generate both the genomic and cl
 RNA-seq data will be made available per sample via GCP.
 
 Some notes to keep in mind:
-- Files can be very large so consider this when you want to egress the files (comes with costs, see [Accessing HMF data through GCP](./accessing-hmf-data-through-gcp.md)).
+- Files can be very large so consider this when you want to egress the files (comes with costs, see [Accessing Hartwig Medical Foundation data through GCP](./accessing-hartwig-data-through-gcp.md)).
 
 ### More information
 - For source code of our analysis pipeline see our [pipeline5 repository](https://github.com/hartwigmedical/pipeline5).
-- For source code of all HMF tools see our [hmftools repository](https://github.com/hartwigmedical/hmftools).
+- For source code of all Hartwig Medical Foundation tools see our [hmftools repository](https://github.com/hartwigmedical/hmftools).
 - For an example patient report see our [resources page](https://resources.hartwigmedicalfoundation.nl/).
 - For various resource files used in the analysis see our [resources page](https://resources.hartwigmedicalfoundation.nl/).
