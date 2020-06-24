@@ -40,7 +40,7 @@ By default, in addition to data-request specific criteria, samples for which one
 - [Somatic Data (VCF/TXT formats)](#somatic-data-vcftxt-formats)
 - [Germline Data (VCF/TXT formats)](#germline-data-vcftxt-formats)
 - [Aligned readout data (CRAM format)](#aligned-readout-data-cram-format)
-- [RNAseq data (FASTQ format)](#rnaseq-data-fastq-format)
+- [RNA-seq data (FASTQ format)](#rnaseq-data-fastq-format)
 - [More information](#more-information)
 
 ### Clinical Data (TSV format)
@@ -75,7 +75,7 @@ For an explanation of the contents of these files, see [PURPLE](https://github.c
 
 ### Germline Data (VCF/TXT formats)
 
-Germline data will be made available in a **germline.tar** via GCP.
+Germline data will be made available in a **germline.tar** file via GCP.
 
 We share the SNVs and small INDELs called from the reference sample using GATK haplotype caller.
 
@@ -84,25 +84,28 @@ We share the SNVs and small INDELs called from the reference sample using GATK h
 Aligned readout data will be made available per sample via GCP.
 
 Some notes to keep in mind:
-- Files can be very large (up to 300GB) so consider this when you want to egress the files (comes with costs, see [Tips on accessing the data through GCP](#tips-on-accessing-the-data-through-GCP)).
+- Files can be very large (up to 300GB) so consider this when you want to egress the files (comes with costs, see [Accessing HMF data through GCP](./accessing-hmf-data-through-gcp.md)).
 
-Example loading CRAM file in IGV:
-- Create the links for the CRAM and accompanying CRAI file (by clicking the most right icon next to a run)
-- Open the IGV program and choose option "Load from URL"
-- Paste the CRAM file link at field "File URL"
-- Paste the CRAI file link at field "Index URL"
+##### Example loading CRAM file in IGV:
+It is possible to directly load CRAM files into IGV using the Google Cloud Storage URL. Please note that to do this, IGV requires your permission to access both Google Cloud Storage and Google Drive. It is at this time not possible to exclude Google Drive from these permissions. To load a CRAM file directly from Google Cloud Storage:
+- Open the IGV program and choose option 'Google' > 'Login' from the menu bar
+- Log in to your Google Account
+- Set the GCP project that will be used for billing the (small amount of) egress cost by choosing 'Google' > 'Enter Project ID'
+- Choose option 'File' > 'Load from URL'
+- Paste the CRAM file gs:// URL at field 'File URL'
+- Paste the CRAI file gs:// URL at field 'Index URL'
 
 Please find more details on the methods used to generate both the genomic and clinical data on a separate [Methods](./data-access-request-methods.md) page.
 
-### RNAseq data (FASTQ format)
+### RNA-seq data (FASTQ format)
 
-RNAseq data will be made available per sample via GCP.
+RNA-seq data will be made available per sample via GCP.
 
 Some notes to keep in mind:
-- Files can be very large  so consider this when you want to egress the files (comes with costs, see [Tips on accessing the data through GCP](#tips-on-accessing-the-data-through-GCP)).
+- Files can be very large so consider this when you want to egress the files (comes with costs, see [Accessing HMF data through GCP](./accessing-hmf-data-through-gcp.md)).
 
 ### More information
-- For source code of our analysis pipeline see our [pipeline5 repo](https://github.com/hartwigmedical/pipeline5).
-- For source code of all HMF tools see our [hmftools repo](https://github.com/hartwigmedical/hmftools).
+- For source code of our analysis pipeline see our [pipeline5 repository](https://github.com/hartwigmedical/pipeline5).
+- For source code of all HMF tools see our [hmftools repository](https://github.com/hartwigmedical/hmftools).
 - For an example patient report see our [resources page](https://resources.hartwigmedicalfoundation.nl/).
 - For various resource files used in the analysis see our [resources page](https://resources.hartwigmedicalfoundation.nl/).

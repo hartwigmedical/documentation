@@ -15,10 +15,9 @@ You can find all details regarding the Data Access Procedure at [our website](ht
 ### Is it possible to collaborate while using your data?
 
 Collaboration is possible on the following grounds:
-
-* The person(s) you are collaborating with will not have access to the raw HMF data that is shared with you through GCP. Only the people that are mentioned in your Data Access Request and registered 'Download Contacts' are allowed to access the raw HMF data. You are allowed to share the results of your analysis.
-* If you need your collaborator to have access to the raw data as well, please add him/her as a 'Download contact'. For a collaborator to be added as a 'Download contact', he/she needs to be appointed within the same 'Legal Entity' or institution. See instructions [on this page, section 'New User procedure'](https://www.hartwigmedicalfoundation.nl/applying-for-data/). 
-* If your collaborator does not work at the same institute (or 'Legal Entity'), you need to put in a new Data Access Request and add your collaborator in the 'Consortium request' part of the application. A License Agreement will be drafted that allows people from multiple institutions to collaborate on analysing the raw data.
+- The person(s) you are collaborating with will not have access to the raw HMF data that is shared with you through GCP. Only the people that are mentioned in your Data Access Request and registered 'Download Contacts' are allowed to access the raw HMF data. You are allowed to share the results of your analysis.
+- If you need your collaborator to have access to the raw data as well, please add him/her as a 'Download contact'. For a collaborator to be added as a 'Download contact', he/she needs to be appointed within the same 'Legal Entity' or institution. See instructions [on this page, section 'New User procedure'](https://www.hartwigmedicalfoundation.nl/applying-for-data/). 
+- If your collaborator does not work at the same institute (or 'Legal Entity'), you need to put in a new Data Access Request and add your collaborator in the 'Consortium request' part of the application. A License Agreement will be drafted that allows people from multiple institutions to collaborate on analysing the raw data.
 
 
 ## Google Cloud Platform Questions
@@ -37,9 +36,8 @@ We are not able to set the GCP account up for you. Instructions on getting a GCP
 
 ### Will I be billed for accessing your data?
 We don't personally bill you for accessing our data, but accessing the data through Google Cloud Platform does come with costs. Basically, there are two ways to approach the data:
-
-* **Download the data onto your own servers**. This will result in egress costs (data that is pulled over the network will be charged per GB, see [Google's Network Pricing page](https://cloud.google.com/compute/network-pricing) for more details.
-* **Analyse the data on GCP itself**. This will results in storage and compute costs. More information can be found on [Google's Cloud Storage pricing page](https://cloud.google.com/storage/pricing) and [Google's VM Instances pricing page](https://cloud.google.com/compute/vm-instance-pricing). If you analyse the data in the same region as it is stored, you won't be charged egress costs. 
+- **Download the data onto your own servers**. This will result in egress costs (data that is pulled over the network will be charged per GB, see [Google's Network Pricing page](https://cloud.google.com/compute/network-pricing) for more details.
+- **Analyse the data on GCP itself**. This will results in storage and compute costs. More information can be found on [Google's Cloud Storage pricing page](https://cloud.google.com/storage/pricing) and [Google's VM Instances pricing page](https://cloud.google.com/compute/vm-instance-pricing). If you analyse the data in the same region as it is stored, you won't be charged egress costs. 
 
 What option to choose depends on your use case and specific requirements. 
 
@@ -48,8 +46,7 @@ A resource that might help you in estimating costs is the [Google Pricing calcul
 
 ### I'm worried about incurring costs on GCP, how can I make sure I stay within budget?
 There is no hard cap to cut off costs at a certain point, but there are several options to monitor your budget within GCP:
-
-* [Set budgets and budget alerts in GCP](https://cloud.google.com/billing/docs/how-to/budgets?hl=en&visit_id=637285189607967041-935235730&rd=1). This option does not let you cap the budget, but allows you to monitor everything and set reminders at appropriate amounts of money spend.
-* [Examples of automated cost control responses](https://cloud.google.com/billing/docs/how-to/notify). Here you can find examples on shutting down VMs when the bill reaches a certain amount within a project.
+- [Set budgets and budget alerts in GCP](https://cloud.google.com/billing/docs/how-to/budgets?hl=en&visit_id=637285189607967041-935235730&rd=1). This option does not let you cap the budget, but allows you to monitor everything and set reminders at appropriate amounts of money spend.
+- [Examples of automated cost control responses](https://cloud.google.com/billing/docs/how-to/notify). Here you can find examples on shutting down VMs when the bill reaches a certain amount within a project.
 
 
