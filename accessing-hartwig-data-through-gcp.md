@@ -1,4 +1,4 @@
-# Accessing Data Through GCP
+# Accessing Data Through Google Cloud Platform
 
 ## Contents
 * [Overview](#overview)
@@ -100,7 +100,7 @@ manifest_json =  bucket.get_blob('manifest.json')
 data = json.loads(manifest_json)
 ```
 
-The intent of the manifest is to enable the use of GCP to scale analysis horizontally across virtual machines and avoid the time and expense of large downloads. At HMF this generally follows the pattern:
+The intent of the manifest is to enable the use of GCP to scale analysis horizontally across virtual machines and avoid the time and expense of large downloads. At Hartwig Medical Foundation this generally follows the pattern:
 * Create a VM with a predefined startup script.
 * Within the startup script, download the data you need
 * Within the startup script, run your analysis
@@ -118,11 +118,13 @@ GCP has a very simple pricing model (linear on CPU, memory and storage) and you 
 
 When using GCP compute resources we strongly recommend using [Pre-emptible VMs](https://cloud.google.com/compute/docs/instances/preemptible), which will save 80% on CPU and memory. 
 
-We suggest using the [pricing calculator](https://cloud.google.com/products/calculator) to get an estimate for your workload. That said, here are some key costs to keep in mind:
-- Using a 32cpu 120GB virtual machine for one hour will cost about $1.60 or $0.30 if pre-emptible.
-- Storing 1TB of data for a month will cost about $20.
+Within GCP, egress (traffic that exist an entity or network boundary) may be charged. See details [here](https://cloud.google.com/compute/network-pricing).
+
+We suggest using the [pricing calculator](https://cloud.google.com/products/calculator) to get an estimate for your workload. That said, here are some key costs to keep in mind (for the most up-to-date price please check the pricing calculator):
+- Using a 32cpu 120GB virtual machine for one hour will cost about $1.60/€1.42 or $0.30/€0.27 if pre-emptible.
+- Storing 1TB of data for a month will cost about $20/€18.
 - *Downloading 1TB of data to a local server will cost about $120/€106*
-- Aligning 100 samples sequenced to 90x with BWA and storing CRAM for 1 year costs approximately $3100 (~$700 for the compute and $2400 storage).
+- Aligning 100 samples sequenced to 90x with BWA and storing CRAM for 1 year costs approximately $3100/€2755 (~$700/€622 for the compute and $2400/€2133 storage).
 
 ### Privacy and Security
 
