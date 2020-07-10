@@ -4,7 +4,7 @@
 * [Overview and general instructions](#overview-and-general-instructions)
 * [Filling in the application](#filling-in-the-application)
 	* [Part 1: General aspects Data Request](#part-1-general-aspects-data-request)
-	* [Part Extra: multi-center (consortium) request](#part-extra-multi-center-consorium-request)
+	* [Part Extra: multi-center (consortium) request](#part-extra-multi-center-consortium-request)
 	* [Part 2: Project proposal](#part-2-project-proposal)
 	* [Part 3: Requested data](#part-3-requested-data)
 	* [Part 4: Research context](#part-4-research-context)
@@ -46,16 +46,30 @@ Please fill in this section if you'd like to collaborate with another 'Legal Ent
 
 If you only wish to collaborate on the results of your analysis on the Hartwig Medical Foundation data, you can skip this section and specify the collaboration in section 4.1. 
 
+It is not possible to request data as a consortium, as this is no official 'Legal Entity'.
+
 ### Part 2: Project proposal
-Please formulate a title and brief summary of your project. Also specify if your project is aimed at discovery, validation or both and provide motivation. 
-Section 2.4 is one of the most important fields of the request. Please describe in detail your proposed project and make sure to answer all three of the following questions in this section:
+
+#### 2.1 Title of the Project
+Please formulate a title and brief summary of your project. This title will be published on the Hartwig Medical Foundation website if your Data Access Request is approved.
+
+#### 2.2 Brief summary of the Project for lay audience
+The summary that you provide here will be published on the Hartwig Medical Foundation website if your Data Access Request is approved. This means that it should be understandable by a lay audience, and we would ask you to please avoid using technical terms. The summary should describe the research you are proposing to do with the Hartwig data.
+
+#### 2.3 Discovery and/or validation?
+Specify if your project is aimed at discovery, validation or both and provide motivation. 
+
+#### 2.4 Detailed description of the project
+This section is one of the most important fields of the request. Please describe in detail your intended project and make sure to answer all three of the following questions in this section:
 1. Details on previous work on which the project is based
 2. Proposed research approach, including tools and additional data that will be used
 3. Anticipated results
 
-In 2.5, please describe (for lay audience) what the relevance of your project is to the clinic/patient.
+#### 2.5 Clinical and/or patient relevance of the project
+Please describe (for lay audience) what the relevance of your project is to the clinic/patient.
 
-The last section, 2.6, needs to be used to describe why you specifically need the Hartwig Medical Foundation data to reach your research goals. Please also motivate the feasibility of the project (are you able to process the amount of data that you requested, do you have the technical expertise/computational power required?).
+### 2.6 Describe the importance of the requested data for the intended project and motivate feasibility considering the data
+This section needs to be used to describe why you specifically need the Hartwig Medical Foundation data to reach your research goals. Please also motivate the feasibility of the project (are you able to process the amount of data that you requested, do you have the technical expertise/personnel/computational power required?).
 
 ### Part 3: Requested data
 Due to the fact that the Hartwig Medical Foundation data is sensitive in nature, we need to make sure to respect the wishes of the patients as stated in their informed consent. This means that we can only give out data that is absolutely nessessary for the research projects that are approved by our Data Access Request procedure (Scientific Board and Data Access Board). Please keep this in mind while filling in the below sections and try to narrow your request to only the patient/treatment/data that you need to get to your results.
