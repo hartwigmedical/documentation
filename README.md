@@ -11,9 +11,9 @@ We recommend researchers start the process of account acquisition while their ap
 
 ## Contents
 
-* [Instructions on completing your Data Access Request application](data-access-request-application): A walkthrough of the application that needs to be filled out when applying for Hartwig data.
-* [Getting a Google Cloud Platform Account](getting-a-Google-account.md): Instructions on how to set up a Google Account for accessing the Hartwig Medical Foundation data set.
-* [Accessing Hartwig Data through Google Cloud Platform](accessing-hartwig-data-through-gcp.md): Instructions on how to use GCP to download or process HMF data. 
-* [Data Access Request Guide](data-access-request-guide.md): Information regarding the files you receive when your Data Access Request is approved: how are samples selected; which formats will you receive.
-* [Data Access Request Methods](data-access-request-methods.md): Methods that were used to generate the data that is serviced through Data Access Requests.
-* [Data Access Request FAQ](data-access-request-faq.md): Take a look at our Frequently Asked Questions.
+* [Instructions on completing your Data Access Request application](data-access-request-application.md)
+* [Getting a Google Cloud Platform Account](getting-a-Google-account.md)
+* [Accessing Hartwig Data through Google Cloud Platform](accessing-hartwig-data-through-gcp.md)
+* [Data Access Request: Data Guide](data-access-request-guide.md)
+* [Data Access Request: Collection Methods](data-access-request-methods.md)
+* [Data Access Request: FAQ](data-access-request-faq.md)
