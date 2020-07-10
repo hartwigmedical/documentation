@@ -9,8 +9,13 @@ This page contains the frequently asked questions regarding Hartwig Medical Foun
 
 ## General Questions
 
-### Where can I find information about the procedure for Hartwig Medical Foundation's Data Access Requests?
+<details>
+<summary>### Where can I find information about the procedure for Hartwig Medical Foundation's Data Access Requests?</summary>
+
+<p>
 You can find all details regarding the Data Access Procedure at [our website](https://www.hartwigmedicalfoundation.nl/applying-for-data/).
+</p>
+</details>
 
 ### Is it possible to collaborate while using your data?
 
