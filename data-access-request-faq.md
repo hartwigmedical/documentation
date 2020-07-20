@@ -41,6 +41,33 @@ As you may know, the data included in the database of Hartwig Medical Foudation 
 </details>
 
 <details>
+<summary>Is it possible to have an admin email address in my GCP project?</summary>
+
+No, we can only allow **personal institutional email addresses** as GCP accounts to release the data to. When releasing data to a service account, an admin account may be added to the project, but can't have the rights to access the service account that the data is linked to. Please see the question right above this one for the specific explanation why we can't allow this.
+</details>
+
+<details> 
+<summary>What can I do with a service account on GCP?</summary>
+
+A service account allows you to process the data that you can access through the ACL in a more efficient way, as you're able to automatise. With a service account, you can spin up multiple VMs simultaniously in one go, whereas with your personal GCP account, you'd have to do this for each sample seperately. 
+</details>
+
+<details>
+<summary>Why do you need to audit my service account?</summary>
+
+We need to audit your project IAM settings when you want to use a service account for data access, as we want to make sure only the registered 'Download contacts' have access to the data (through restricted access to the service account), as agreed upon in the License Agreement. The audit is performed like this:
+- You will need to add one of the Hartwig employees to your project with the role 'Viewer', so he/she is able to see the users with access to your project via IAM.
+- Our Hartwig employee will take a look at the users within your project and register the accounts and roles with access.
+- Then Hartwig will check if the users with priviledged access are also registered 'Download contacts' on the data access request documentation. We only allow the following scenarios:
+    - Only the download contact has an account in the project (and multiple service accounts are allowed)
+    - The download contact has an account in the project, and is the only one that can work with the service account. This means that there are other users allowed, but their roles should not be one of the following (the below roles give a user access to all service accounts within a project):
+        - Owner
+        - Editor
+        - Service Account User
+- When this is all in order, you will be notified by us and the data collection is started.
+</details>
+
+<details>
 <summary>I can't seem to set up a GCP account with my institutional email address?</summary>
 
 Please follow the instructions in our [Getting a Google account](https://hartwigmedical.github.io/documentation/getting-a-Google-account.html) documentation. In short, go to the [Google Account creation page](https://accounts.google.com/signup?hl=en), click 'Use my current email address instead' and follow the prompts. Please note that we need multi-factor authentication enabled for all accounts we share our data with.
