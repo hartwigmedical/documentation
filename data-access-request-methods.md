@@ -6,20 +6,23 @@ Patients in these studies have given explicit consent for whole genome sequencin
 These studies deliver clinical data to Hartwig to accompany the whole genome analysis. The clinical data is curated and standardized by Hartwig as part of the data ingestion algorithms found in our [Patient DB](https://github.com/hartwigmedical/hmftools/tree/master/patient-db).
 
 ### Contents
-- [CPCT-02](#cpct-02-nct01855477)
-- [DRUP-01](#drup-01-nct02925234)
+- [CPCT-02](#cpct-02)
+- [DRUP-01](#drup-01)
 - [WIDE](#wide)
 - [Sequencing workflow](#sequencing-workflow)
 - [Bioinformatics workflow](#bioinformatics-workflow)
 
 
-## CPCT-02 ([NCT01855477](https://clinicaltrials.gov/ct2/show/NCT01855477))
+## CPCT-02
 
 Patients with advanced cancer not curable by local treatment options and being candidates for any type of systemic treatment and any line of treatment were included as part of the Center for Personalized Cancer Treatment (CPCT-02) clinical study, which was approved by the medical ethical committee (METC) of the University Medical Center Utrecht. 
 
 A total of 44 academic, teaching and general hospitals across the Netherlands participated in this study and collected material and clinical data by standardized protocols. 
 
 Core needle biopsies were sampled from the metastatic lesion, or when considered not feasible or not safe, from the primary tumor site when still in situ. One to four biopsies were collected (average of 2.1 per patient) and frozen in liquid nitrogen directly after sampling. In parallel, a tube of blood was collected in CellSave or Streck tubes, which was shipped by room temperature to the central sequencing facility at the Hartwig Medical Foundation. Left-over material (biopsy, DNA) after sample processing was stored in a biobank at the University Medical Center Utrecht.
+
+CPCT-02 can be found using ClinicalTrials.gov Identifier [NCT01855477](https://clinicaltrials.gov/ct2/show/NCT01855477).
+
 
 ### CPCT-02 clinical data collection
 
@@ -41,7 +44,7 @@ There are specific considerations to keep in mind with different types of data:
 
  - Survival: the data on survival are not present for every patient. Connecting the data to survival data is something CPCT aims to be performing in 2020.
 
-## DRUP-01 ([NCT02925234](https://clinicaltrials.gov/ct2/show/NCT02925234))
+## DRUP-01
 
 Patients who were eligible for the study had an advanced or metastatic solid tumour, multiple myeloma or B cell non-Hodgkin lymphoma, and had exhausted standard-treatment options. A tumour genetic or protein-expression test (CPCT or regular diagnostics) had to have revealed a potentially actionable variant, for which FDA- and/or EMA-approved targeted (or immuno-) therapy was available—but not for the tumour type in question. This clinical study was approved by the Medical Ethical Committee of the Netherlands Cancer Institute in Amsterdam
 
@@ -51,6 +54,8 @@ Core needle biopsies were sampled similar according to the CPCT protocol as outl
 
 A total of 37 academic, teaching and general hospitals across the Netherlands participated in this study and collected material and clinical data by standardized protocols.
 DRUP clinical data collection
+
+DRUP-01 can be found using ClinicalTrials.gov Identifier [NCT02925234](https://clinicaltrials.gov/ct2/show/NCT02925234).
 
 ### DRUP clinical data collection
 
@@ -89,7 +94,7 @@ Reads were mapped to the reference genome GRCh37 using BWA-mem v0.7.x. Duplicate
 
 GATK HaplotypeCaller v3.x was run to call germline variants in the reference sample, after a which a set of soft filters are applied which can be found in the germline VCFs of the samples. 
 
-Strelka v1 was run to call somatic SNVs and small INDELs using non-default (reduced) filters to increase sensitivity. In addition various additional filters are run post-strelka to increase precision.
+[SAGE](https://github.com/hartwigmedical/hmftools/tree/master/sage) v2.x was run to call somatic SNVs and small INDELs. SAGE was developed to increase sensitivity using a four tiered approach.
 
 [GRIDSS](https://github.com/PapenfussLab/gridss) v2.x was run to call structural variants with various additional annotations applied. 
   

@@ -16,4 +16,4 @@ We recommend researchers start the process of account acquisition while their ap
 * [Accessing Hartwig Data through Google Cloud Platform](accessing-hartwig-data-through-gcp.md)
 * [Data Access Request: Data Guide](data-access-request-guide.md)
 * [Data Access Request: Collection Methods](data-access-request-methods.md)
-* [Data Access Request: FAQ](data-access-request-faq.md)
+* [Frequently Asked Questions](data-access-request-faq.md)

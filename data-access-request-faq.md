@@ -1,5 +1,4 @@
 # Frequently Asked Questions
-## Hartwig Medical Foundation Data Access Requests
 
 This page contains the frequently asked questions regarding Hartwig Medical Foundation Data Access Requests. Please note that this page is not exhaustive and that you should consult your License Agreement regarding the exact agreements that were made between Hartwig Medical Foundation and your institute.
 
@@ -22,6 +21,7 @@ Collaboration is possible on the following grounds:
 - The person(s) you are collaborating with will not have access to the raw Hartwig Medical Foundation data that is shared with you through GCP. Only the people that are mentioned in your Data Access Request and registered 'Download Contacts' are allowed to access the raw Hartwig Medical Foundation data. You are allowed to share the results of your analysis.
 - If you need your collaborator to have access to the raw data as well, please add him/her as a 'Download contact'. For a collaborator to be added as a 'Download contact', he/she needs to be appointed within the same 'Legal Entity' or institution. See instructions [on this page, section 'New User procedure'](https://www.hartwigmedicalfoundation.nl/applying-for-data/). 
 - If your collaborator does not work at the same institute (or 'Legal Entity'), you need to put in a new Data Access Request and add your collaborator in the 'Consortium request' part of the application. A License Agreement will be drafted that allows people from multiple institutions to collaborate on analysing the raw data.
+- It is not possible to request data as a consortium, as this is no official 'Legal Entity'.
 </details>
 
 <details>
@@ -49,7 +49,7 @@ Please follow the instructions in our [Getting a Google account](https://hartwig
 <details>
 <summary>Can you help us with setting up a GCP account?</summary>
 
-We are not able to set the GCP account up for you. Instructions on getting a GCP account can be found in our [Getting a Google account](https://hartwigmedical.github.io/documentation/getting-a-Google-account.html) instructions. If the instructions are somehow not working for you, please contact us. We might be able to point you to someone that can assist you in the process.
+We are not able to set the GCP account up for you. Instructions on getting a GCP account can be found in our [Getting a Google account](https://hartwigmedical.github.io/documentation/getting-a-Google-account.html) instructions. If the instructions are somehow not working for you, please [contact us](https://www.hartwigmedicalfoundation.nl/en/contact-us/). We might be able to point you to someone that can assist you in the process.
 </details>
 
 ## Billing Questions

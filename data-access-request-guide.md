@@ -14,7 +14,7 @@ Note: more details on the methods used to generate both the genomic and clinical
   - [Somatic Data (VCF/TXT formats)](#somatic-data-vcftxt-formats)
   - [Germline Data (VCF/TXT formats)](#germline-data-vcftxt-formats)
   - [Aligned readout data (CRAM format)](#aligned-readout-data-cram-format)
-  - [RNAseq data (FASTQ format)](#rnaseq-data-fastq-format)
+  - [RNAseq data (FASTQ format)](#rna-seq-data-fastq-format)
   - [More information](#more-information)
 
 ## General Notes
@@ -28,7 +28,6 @@ Please use the **unique ID** given to your request (eg. "DR-XXX") in any communi
 
 By default, in addition to data-request specific criteria, samples for which one of the below applies are **excluded**:
 
-- Samples from patients where informed consent is from before 21 April 2016.
 - Samples with poor quality (PURPLE qcStatus != PASS).
 - Samples without any tumor evidence (PURPLE status = NO_TUMOR).
 - Samples with less than 19.5% tumor cells (PURPLE purity < 0.195).
@@ -40,7 +39,7 @@ By default, in addition to data-request specific criteria, samples for which one
 - [Somatic Data (VCF/TXT formats)](#somatic-data-vcftxt-formats)
 - [Germline Data (VCF/TXT formats)](#germline-data-vcftxt-formats)
 - [Aligned readout data (CRAM format)](#aligned-readout-data-cram-format)
-- [RNA-seq data (FASTQ format)](#rnaseq-data-fastq-format)
+- [RNA-seq data (FASTQ format)](#rna-seq-data-fastq-format)
 - [More information](#more-information)
 
 ### Clinical Data (TSV format)
@@ -105,7 +104,7 @@ Some notes to keep in mind:
 - Files can be very large so consider this when you want to egress the files (comes with costs, see [Accessing Hartwig Medical Foundation data through GCP](./accessing-hartwig-data-through-gcp.md)).
 
 ### More information
-- For source code of our analysis pipeline see our [pipeline5 repository](https://github.com/hartwigmedical/pipeline5).
-- For source code of all Hartwig Medical Foundation tools see our [hmftools repository](https://github.com/hartwigmedical/hmftools).
-- For an example patient report see our [resources page](https://resources.hartwigmedicalfoundation.nl/).
-- For various resource files used in the analysis see our [resources page](https://resources.hartwigmedicalfoundation.nl/).
+- For source code of our analysis pipeline see our [pipeline5 repository](https://github.com/hartwigmedical/pipeline5)
+- For source code of all Hartwig Medical Foundation tools see our [hmftools repository](https://github.com/hartwigmedical/hmftools)
+- For an example patient report see our [resources page](https://resources.hartwigmedicalfoundation.nl/)
+- For various resource files used in the analysis see our [resources page](https://resources.hartwigmedicalfoundation.nl/)

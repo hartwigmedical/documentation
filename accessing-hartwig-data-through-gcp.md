@@ -46,10 +46,10 @@ All data access will be performed with the [gsutil](https://cloud.google.com/sto
 ### Data Request Bucket
 
 We create a unique bucket for each data request which contains:
-- If applicable, a metadata.tar containing the [clinical data](data-access-request-guide.html#clinical-data-tsv-format)
-- If applicable, a somatics.tar containing the [somatic data](data-access-request-guide.html#somatic-data-vcftxt-formats)
-- If applicable, a germline.tar containing the [germline data](data-access-request-guide.html#germline-data-vcftxt-formats)
-- A manifest JSON file, which will contain Google Storage URLs to any DNA cram or RNASeq fastq data.
+- If applicable, a metadata.tar containing the [clinical data](data-access-request-guide.md#clinical-data-tsv-format)
+- If applicable, a somatics.tar containing the [somatic data](data-access-request-guide.md#somatic-data-vcftxt-formats)
+- If applicable, a germline.tar containing the [germline data](data-access-request-guide.md#germline-data-vcftxt-formats)
+- A manifest JSON file, which will contain Google Storage URLs to any DNA cram or RNASeq fastq data
 
 You will receive this bucket name from our data request service team, but it will look something like: `hmf-dr-123`, and you can inspect it with gsutil like so:
 
@@ -57,7 +57,7 @@ You will receive this bucket name from our data request service team, but it wil
 gsutil -u your-project ls gs://hmf-dr-123
 ```
 
-Note the `-u your-project`, this is necessary to assign the billing project to the request for any egress costs (even though an `ls` does not incur egress, all operations still need a billing account). See the [costs overview](#costs) for more details.
+Note the `-u your-project`, this is necessary to assign the billing project to the request for any egress costs (even though an `ls` does not incur egress, all operations still need a billing account). See the [costs overview](#gcp-costs) for more details.
 
 To download files locally or to a VM:
 
@@ -87,7 +87,7 @@ The manifest gives you the following information:
     - The GCS urls of CRAM and CRAI files (if requested and approved)
     - The GCS urls of RNASeq FASTQ files (if requested and approved)
     
-You can find an example [here](manifest.json)
+You can find an example [here](manifest.json).
 
 JSON has good support in most programming languages. For instance with python you can load the manifest straight from GCS into a dict in a few lines:
 
@@ -101,7 +101,7 @@ data = json.loads(manifest_json)
 ```
 
 The intent of the manifest is to enable the use of GCP to scale analysis horizontally across virtual machines and avoid the time and expense of large downloads. At Hartwig Medical Foundation this generally follows the pattern:
-* Create a VM with a predefined startup script.
+* Create a VM with a predefined startup script
 * Within the startup script, download the data you need
 * Within the startup script, run your analysis
 * Within the startup script, upload the results to your own bucket
@@ -114,17 +114,17 @@ We kept things simple by design, we hope to see many creative analysis implement
 
 When using any cloud platform, its very important to understand the cost of operations. The good news is, GCP is very competitively priced and will also help alleviate load on internal HPCs and staff.
 
-GCP has a very simple pricing model (linear on CPU, memory and storage) and you can find all the details [here](https://cloud.google.com/pricing) 
+GCP has a very simple pricing model (linear on CPU, memory and storage) and you can find all the details [here](https://cloud.google.com/pricing) .
 
 When using GCP compute resources we strongly recommend using [Pre-emptible VMs](https://cloud.google.com/compute/docs/instances/preemptible), which will save 80% on CPU and memory. 
 
 Within GCP, egress (traffic that exist an entity or network boundary) may be charged. See details [here](https://cloud.google.com/compute/network-pricing).
 
 We suggest using the [pricing calculator](https://cloud.google.com/products/calculator) to get an estimate for your workload. That said, here are some key costs to keep in mind (for the most up-to-date price please check the pricing calculator):
-- Using a 32cpu 120GB virtual machine for one hour will cost about $1.60/€1.42 or $0.30/€0.27 if pre-emptible.
-- Storing 1TB of data for a month will cost about $20/€18.
-- *Downloading 1TB of data to a local server will cost about $120/€106*
-- Aligning 100 samples sequenced to 90x with BWA and storing CRAM for 1 year costs approximately $3100/€2755 (~$700/€622 for the compute and $2400/€2133 storage).
+- Using a 32cpu 120GB virtual machine for one hour will cost about $1.60/€1.42 or $0.30/€0.27 if pre-emptible
+- Storing 1TB of data for a month will cost about $20/€18
+- Downloading 1TB of data to a local server will cost about $120/€106
+- Aligning 100 samples sequenced to 90x with BWA and storing CRAM for 1 year costs approximately $3100/€2755 (~$700/€622 for the compute and $2400/€2133 storage)
 
 ### Privacy and Security
 
