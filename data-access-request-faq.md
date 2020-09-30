@@ -53,8 +53,8 @@ As you may know, the data included in the database of Hartwig Medical Foudation 
 Advantages for you as researcher:
 - No duplications of public resources
 - You will have access to data analysed with our latest-greatest toolset
-- You can use our data in a state-of-the-art compute environment that gives you a lot of flexibility, you only pay for what you use, and the GCP compute is generally cheap (see our <cost example>).
-- You don’t have to pay for storage as you can use the files from within our infrastructure (also see our <cost example>)
+- You can use our data in a state-of-the-art compute environment that gives you a lot of flexibility, you only pay for what you use, and the GCP compute is generally cheap (see our [cost example in the 'Billing questions' section below](#billing-questions)).
+- You don’t have to pay for storage as you can use the files from within our infrastructure (also see our [cost example in the 'Billing questions' section below](#billing-questions))
 - There is a good backup procedure in place for our data set
 - Data is encrypted with our own key
 See for more details on why Hartwig chose for GCP as our Cloud provider below. 
@@ -164,7 +164,7 @@ A resource that might help you in estimating costs is the [Google Pricing calcul
 </details>
 
 <details>
-<summary>Could you give a cost example for a use case on GCP?</summary>
+<summary>Could you give a **cost example** for a use case on GCP?</summary>
 
 Utilising the Google Cloud Platform could also work in your benefit, compare the following scenarios that could occur when your data access request is approved for 100 samples:
 - Spin up 100 VMs to run a different aligner on the CRAM files. This would result in ~€5 analysis costs per sample. You only store the resulting VCFs (~50 Mb each) for one year, as you can always reuse the CRAMs that are in Hartwigs buckets without having to pay for it's storage.
