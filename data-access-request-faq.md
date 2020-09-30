@@ -79,34 +79,34 @@ Hartwig Medical Foundation decided to move to Google Cloud Platform as it's infr
 - Scale
     - We are managing ~ 1 Petabyte of aligned read data, that we could not (easily) make available for scientific research from our own hardware infrastructure due to the constraints of the data set size.
     - We can now make the raw CRAM files available to external researchers, while this was previously limited to analysis files. 
-    - GCP makes it possible to rerun tools and improved analysis pipelines on our entire database in one go
+    - GCP makes it possible to rerun tools and improved analysis pipelines on our entire database in one go.
     - We never have to wait for availability of or buying additional hardware resources, this holds for both storage and compute.
     - We can do production and development in parallel on the same infrastructure.
 - Flexibility
-    - Multiple storage tiers
-    - Broad range of VM types
+    - Multiple storage tiers.
+    - Broad range of VM types.
     - Ready made 'Products' that we could benefit from in our workflow, for example BigQuery and Kubernetes engine.
 - Cost
-    - Using different tiers of storage reduced our infrastructure cost considerably
-    - Running VMs only when needed, instead of always-on
-    - Application of pre-emptibles resulted in even bigger cost reduction
+    - Using different tiers of storage reduced our infrastructure cost considerably.
+    - Running VMs only when needed, instead of always-on.
+    - Application of pre-emptibles resulted in even bigger cost reduction.
 - Safety
-    - Back-ups at different locations possible in the European Economic Region
-    - Encryption of data
-    - Less copies of the data (we can also manage informed consent requirements in this way)
+    - Back-ups at different locations possible in the European Economic Region.
+    - Encryption of data.
+    - Less copies of the data (we can also manage informed consent requirements in this way).
 - Data privacy
-    - Compliance with GDPR, AVG, UAVG
-    - ISO27001 compliance
-    - DPIA on transition to GCP 
-    - DPIA on Contract with GCP
+    - Compliance with GDPR, AVG, UAVG.
+    - ISO27001 compliance.
+    - DPIA on transition to GCP.
+    - DPIA on Contract with GCP.
 - Future proof considering all above points
 
 Of course, we also considered the downside of moving to GCP (or any other public/non-public cloud provider):
-Vendor lock-in; data requesters would have to go through GCP to get access to the data. There will always be some kind of lock in by choosing 1 provider.
-Privacy concerns; Our solution: this is managed by performing our own encryption, putting additional security measures in place and implementing GDPR-compliant legal terms with Google.
-Egress costs for downloading data out of GCP; this item has two sides:
-Hartwig was paying for egress costs in our previous set-up, but after the move to GCP this will be 'requester pays', allowing us to redirect the egress costs to development.
-Users do not have to download the data as for the GCP solution, in contrast to our previous solution, computational resources are available. In the case of 1 Petabyte of data, we do not consider it beneficial to download the data, but want researchers to bring compute to the data (instead of the other way around).This also circumvents the need to arrange local storage, which turns out to become an increasing challenge for many data users.
+- Vendor lock-in; data requesters would have to go through GCP to get access to the data. There will always be some kind of lock in by choosing 1 provider.
+- Privacy concerns; Our solution: this is managed by performing our own encryption, putting additional security measures in place and implementing GDPR-compliant legal terms with Google.
+- Egress costs for downloading data out of GCP; this item has two sides:
+    - Hartwig was paying for egress costs in our previous set-up, but after the move to GCP this will be 'requester pays', allowing us to redirect the egress costs to development.
+    - Users do not have to download the data as for the GCP solution, in contrast to our previous solution, computational resources are available. In the case of 1 Petabyte of data, we do not consider it beneficial to download the data, but want researchers to bring compute to the data (instead of the other way around).This also circumvents the need to arrange local storage, which turns out to become an increasing challenge for many data users.
 
 We also considered hybrid alternatives, for example by moving some of our data to EGA. At this point in time however, EGA would mean a duplication of our database, as we also still need the data readily available to keep the data that we provide for data access requests on our latest-greatest version of tools.
 </details>
@@ -164,7 +164,7 @@ A resource that might help you in estimating costs is the [Google Pricing calcul
 </details>
 
 <details>
-<summary>Could you give a **cost example** for a use case on GCP?</summary>
+<summary>Could you give a cost example for a use case on GCP?</summary>
 
 Utilising the Google Cloud Platform could also work in your benefit, compare the following scenarios that could occur when your data access request is approved for 100 samples:
 - Spin up 100 VMs to run a different aligner on the CRAM files. This would result in ~€5 analysis costs per sample. You only store the resulting VCFs (~50 Mb each) for one year, as you can always reuse the CRAMs that are in Hartwigs buckets without having to pay for it's storage.
