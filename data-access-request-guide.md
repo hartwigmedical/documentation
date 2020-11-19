@@ -9,7 +9,7 @@ Note: more details on the methods used to generate both the genomic and clinical
 
 * [General notes](#general-notes)
 * [Sample selection](#sample-selection)
-* [Doid in database](#doid.html)
+* [Doid in database](#doid-in-database)
 * [Format of the data made available](#format-of-the-data-made-available)
   - [Clinical Data (TSV format)](#clinical-data-tsv-format)
   - [Somatic Data (VCF/TXT formats)](#somatic-data-vcftxt-formats)
@@ -32,6 +32,10 @@ By default, in addition to data-request specific criteria, samples for which one
 - Samples with poor quality (PURPLE qcStatus != PASS).
 - Samples without any tumor evidence (PURPLE status = NO_TUMOR).
 - Samples with less than 19.5% tumor cells (PURPLE purity < 0.195).
+
+## Doid in database
+
+You can find the three with doids in de database [here](doid.html).
 
 
 ## Format of the data made available
