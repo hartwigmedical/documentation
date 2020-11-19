@@ -9,6 +9,7 @@ Note: more details on the methods used to generate both the genomic and clinical
 
 * [General notes](#general-notes)
 * [Sample selection](#sample-selection)
+* [Doid in database](#doid.html)
 * [Format of the data made available](#format-of-the-data-made-available)
   - [Clinical Data (TSV format)](#clinical-data-tsv-format)
   - [Somatic Data (VCF/TXT formats)](#somatic-data-vcftxt-formats)
