@@ -35,7 +35,7 @@ By default, in addition to data-request specific criteria, samples for which one
 
 ## Doid in database
 
-You can find the three with doids in de database [here](index.html).
+You can find the three with doids in de database [here](doid.html).
 
 
 ## Format of the data made available
