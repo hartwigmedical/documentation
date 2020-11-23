@@ -29,9 +29,12 @@ Please use the **unique ID** given to your request (eg. "DR-XXX") in any communi
 
 By default, in addition to data-request specific criteria, samples for which one of the below applies are **excluded**:
 
-- Samples with poor quality (PURPLE qcStatus != PASS).
-- Samples without any tumor evidence (PURPLE status = NO_TUMOR).
-- Samples with less than 19.5% tumor cells (PURPLE purity < 0.195).
+- Samples with PURPLE qcStatus != PASS:
+      Samples with poor quality;
+      Samples without any tumor evidence;
+      Samples with less than 19.5% tumor cells.
+- Samples with insufficient coverage.
+
 
 ## Doid in database
 
