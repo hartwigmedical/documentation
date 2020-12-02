@@ -9,7 +9,7 @@ Note: more details on the methods used to generate both the genomic and clinical
 
 * [General notes](#general-notes)
 * [Sample selection](#sample-selection)
-* [Primary tumor location/type of samples in the database (DOID)](#Primary-tumor-location/type-of-samples-in-the-database-(DOID))
+* [Primary tumor location and type via DOID ontology](#primary-tumor-location-and-type-via-doid-ontology)
 * [Format of the data made available](#format-of-the-data-made-available)
   - [Clinical Data (TSV format)](#clinical-data-tsv-format)
   - [Somatic Data (VCF/TXT formats)](#somatic-data-vcftxt-formats)
@@ -36,9 +36,9 @@ By default, in addition to data-request specific criteria, samples for which one
 - Samples with insufficient coverage.
 
 
-## Primary tumor location/type of samples in the database (DOID)
+## Primary tumor location and type via DOID ontology
 
-The primary tumor location and/or type of the samples in the database are mapped to the DOID ontology (as detailed as possible on available data, for information of the DOID ontology system see: https://www.ebi.ac.uk/ols/ontologies/doid). Please find the tree of the doids in the Hartwig Medical Foundation database  [here](doid.html). 
+The primary tumor location and/or type of the samples in the database are mapped to the DOID ontology (as detailed as possible on available data, for information of the DOID ontology system see: [https://www.ebi.ac.uk/ols/ontologies/doid](https://www.ebi.ac.uk/ols/ontologies/doid)). Please find the tree of the doids in the Hartwig Medical Foundation database  [here](doid.html). 
 
 
 ## Format of the data made available
