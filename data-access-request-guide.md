@@ -16,7 +16,8 @@ Note: more details on the methods used to generate both the genomic and clinical
   - [Germline Data (VCF/TXT formats)](#germline-data-vcftxt-formats)
   - [Aligned readout data (CRAM format)](#aligned-readout-data-cram-format)
   - [RNAseq data (FASTQ format)](#rna-seq-data-fastq-format)
-  - [More information](#more-information)
+* [Example data (COLO829v0003T)](#example-data-colo829v0003t)
+* [More information](#more-information)
 
 ## General Notes
  - Please be aware that the sample IDs provided to you are not publicly shareable. In case you want to publish something with respect to a specific sample from the Hartwig Medical Foundation database you need to use the Hartwig Sample ID for this. For newer DRs these have been made available; for older requests these can be requested for the samples you have been provided. 
@@ -111,7 +112,11 @@ RNA-seq data will be made available per sample via GCP.
 Some notes to keep in mind:
 - Files can be very large so consider this when you want to egress the files (comes with costs, see [Accessing Hartwig Medical Foundation data through GCP](./accessing-hartwig-data-through-gcp.md)).
 
-### More information
+## Example data (COLO829v0003T)
+
+COLO829v003T is a melanoma cell line that can be used for testing. The COLO829v003T somatic tar file (different pipeline versions) can be downloaded from our [resources page](https://nextcloud.hartwigmedicalfoundation.nl/s/LTiKTd8XxBqwaiC?path=%2FData-Access-Requests). We also have the COLO829v003T available on the Google Cloud Platform (somatic and germline tar file, and the cram files). To be added to the ACL of these files please send an email to ict@hartwigmedicalfoundation.nl including the GCP account the data should be made available for (please note this should be a GCP account set up with an institutional email address, see [Getting Started with Google Cloud Platform](./getting-a-Google-account.md)).
+
+## More information
 - For source code of our analysis pipeline see our [pipeline5 repository](https://github.com/hartwigmedical/pipeline5)
 - For source code of all Hartwig Medical Foundation tools see our [hmftools repository](https://github.com/hartwigmedical/hmftools)
 - For an example patient report see our [resources page](https://resources.hartwigmedicalfoundation.nl/)
