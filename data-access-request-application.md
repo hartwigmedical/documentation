@@ -84,9 +84,9 @@ Here you can find one list field that can be used to filter down the selection o
 4. The data used in the Priestley et al paper, filtered on tumor type and/or specific treatment (please use the 'specify specific patient selection' field to specity details)
 5. Other filtering requirements (please use the 'specify specific patient selection' field to specity details).
 
-To help you narrow down your selection, you can take a look at our:
-- [Primary tumor locations annotated within our database](https://raw.githubusercontent.com/hartwigmedical/hmftools/master/patient-db/src/main/resources/tumor_location_mapping.csv).
-- [Treatment details available in our database](https://raw.githubusercontent.com/hartwigmedical/hmftools/master/patient-db/src/main/resources/treatment_mapping.csv). Here you can also find the 'type' and 'mechanisms' that we assing to each drug, so you can do selection on these criteria as well.
+To help you narrow down your selection, you can take a look at:
+- [DOID ontology](https://www.ebi.ac.uk/ols/ontologies/doid)
+- [Hartwig Primary tumor locations and/or types mapped to DOID ontology](https://hartwigmedical.github.io/documentation/doid.html).
 
 Make sure to motivate your requirements in the field below the selection. This field will be used by both the Scientific Board and Data Access Board to decide if your selection is not too broad.
 
