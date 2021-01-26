@@ -67,19 +67,40 @@ Please find more details on the methods used to generate both the genomic and cl
 Somatic data will be made available in a **somatics.tar** via GCP.
 
 ##### Per sample the following files are present:
-- purple.somatic.vcf.gz (somatic SNVs and small INDELs)
-- purple.sv.ann.vcf.gz (somatic structural variants)
-- purple.cnv.somatic.tsv (somatic copy number regions)
-- purple.cnv.gene.tsv (somatic copy number per gene)
-- purple.purity.tsv (implied percentage of tumor cells)
-- purple.purity.range.tsv (in depth information about purity measure)
-- purple.qc (quality control outcome)
-- purple.version (purple version used)
+In the purple folder --
 - circos.png (genome wide plot)
-- driver.catalog.tsv (affected driver genes)
-- purple.cnv.germline.tsv (germline copy number regions) *[in case germline level is part of request]*
+- driver.catalog.tsv  (affected driver genes)
+- purple.cnv.gene.tsv (somatic copy number per gene)
+- purple.cnv.germline.tsv (germline copy number regions) *[only in case germline level is part of request]*
+- purple.cnv.somatic.tsv (somatic copy number regions)
+- purple.purity.range.tsv (in depth information about purity measure)
+- purple.purity.tsv (implied percentage of tumor cells)
+- purple.qc (quality control outcome)
+- purple.somatic.vcf.gz + purple.somatic.vcf.gz.tbi (somatic SNVs and small INDELs)
+- purple.sv.vcf.gz + purple.sv.vcf.gz.tbi (somatic structural variants)
+- purple.version  (purple version used)
 
-For an explanation of the contents of these files, see [PURPLE](https://github.com/hartwigmedical/hmftools/tree/master/purity-ploidy-estimator).  
+For an explanation of the contents of the purple. files, see [PURPLE](https://github.com/hartwigmedical/hmftools/tree/master/purity-ploidy-estimator).  
+
+In the linx folder --
+- driver.catalog.tsv (reproduction of the driver catalog produced by PURPLE with homozygous disruptions events appended)
+- linx.breakend.tsv (impact of each non PON filtered break junction on each overlapping gene)
+- linx.clusters.tsv (clustering of all non PON filtered SV events and their resolved classification)
+- linx.drivers.tsv  (linkage of drivers from driver catalog to SV cluster which contributed to those drivers)
+- linx.fusion.tsv (inframe and out of frame fusions)
+- linx.links.tsv (chromosomal segments joining break junction pairs predicted to be linked and phased in cis on the derivative chromosome)
+- linx.svs.tsv (structural variant annotations)
+- linx.viral_inserts.tsv (viral insertions)
+- linx.vis_copy_number.tsv 
+- linx.vis_fusion.tsv 
+- linx.vis_gene_exon.tsv
+- linx.vis_protein_domain.tsv
+- linx.vis_segments.tsv
+- linx.vis_sv_data.tsv
+    *the .vis_ files are visualisations. 
+- linx.version (linx version used)
+
+For an explanation of the contents of the linx. files, see [LINX](https://github.com/hartwigmedical/hmftools/tree/master/sv-linx).
 
 ### Germline Data (VCF/TXT formats)
 
