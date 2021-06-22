@@ -16,7 +16,7 @@ Note: more details on the methods used to generate both the genomic and clinical
   - [Germline Data (VCF/TXT formats)](#germline-data-vcftxt-formats)
   - [Aligned readout data (CRAM format)](#aligned-readout-data-cram-format)
   - [RNAseq data (FASTQ format)](#rna-seq-data-fastq-format)
-* [Example data (COLO829v0003T)](#example-data-colo829v0003t)
+* [Example data (COLO829v003T)](#example-data-colo829v003t)
 * [More information](#more-information)
 
 ## General Notes
@@ -133,7 +133,7 @@ RNA-seq data will be made available per sample via GCP.
 Some notes to keep in mind:
 - Files can be very large so consider this when you want to egress the files (comes with costs, see [Accessing Hartwig Medical Foundation data through GCP](./accessing-hartwig-data-through-gcp.md)).
 
-## Example data (COLO829v0003T)
+## Example data (COLO829v003T)
 
 COLO829v003T is a melanoma cell line that can be used for testing. The COLO829v003T somatic tar file (different pipeline versions) can be downloaded from our [resources page](https://nextcloud.hartwigmedicalfoundation.nl/s/LTiKTd8XxBqwaiC?path=%2FData-Access-Requests). We also have the COLO829v003T available on the Google Cloud Platform (somatic and germline tar file, and the cram files). To be added to the ACL of these files please send an email to ict@hartwigmedicalfoundation.nl including the GCP account the data should be made available for (please note this should be a GCP account set up with an institutional email address, see [Getting Started with Google Cloud Platform](./getting-a-Google-account.md)).
 
