@@ -9,9 +9,9 @@ These studies deliver clinical data to Hartwig to accompany the whole genome ana
 - [CPCT-02](#cpct-02)
 - [DRUP-01](#drup-01)
 - [WIDE](#wide)
-- [Sequencing workflow](#sequencing-workflow)
+- [DNA Sequencing workflow](#dna-sequencing-workflow)
 - [Bioinformatics workflow](#bioinformatics-workflow)
-
+- [RNA Sequencing workflow](#rna-sequencing-workflow)
 
 ## CPCT-02
 
@@ -80,7 +80,7 @@ There are specific considerations to keep in mind with different types of data:
 
 Coming soon...
 
-## Sequencing workflow
+## DNA Sequencing workflow
 
 DNA was isolated from biopsy and blood on an automated setup (QiaSymphony) according to supplier's protocols (Qiagen) using the DSP DNA Midi kit for blood and QIAsymphony DSP DNA Mini kit for tissue and quantified (Qubit). Before starting DNA isolation from tissue, the biopsy was dissolved in 100 microliter Nuclease-free water by using the Qiagen TissueLyzer and split in two equal fractions for parallel automated DNA and RNA isolation (QiaSymphony). 
 
@@ -105,3 +105,6 @@ GATK HaplotypeCaller v3.x was run to call germline variants in the reference sam
 For more detailed information on tools and parameters used:
 - For germline SNV/INDEL calling and somatic SNV/INDEL calling please see the 'Methods' section of [Hartwig Medical Foundation Pan Cancer Paper](https://www.nature.com/articles/s41586-019-1689-y).
 - For GRIDSS/Purple/LINX see [Hartwig Medical Foundation Toolkit Paper](https://www.biorxiv.org/content/10.1101/781013v1).
+
+## RNA Sequencing workflow
+Total RNA was extracted using the QIAGEN QIAsymphony RNA kit (cat nr 931636). Samples with approximately 100ng total RNA were prepared with KAPA RNA Hyper + RiboErase HMR (cat nr 8098131702) and RNA libraries were paired end sequenced on the Illumina NextSeq550 platform (2x75bp) or Illumina NovaSeq6000 platform (2x150bp).
