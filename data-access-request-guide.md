@@ -53,7 +53,7 @@ The primary tumor location and/or type of the samples in the database are mapped
 
 ### Clinical Data (TSV format)
 
-Clinical data will be made available in a **metadata.tar** via GCP.
+Clinical data will be made available in a **metadata.tsv** via GCP.
 
 Some notes about the clinical data:
 - As much information as possible from the Electronic Case Report Form (eCRF) of the respective clinical studies is gathered. Please be aware that records are not guaranteed to be complete.
@@ -64,7 +64,7 @@ Please find more details on the methods used to generate both the genomic and cl
 
 ### Somatic Data (VCF/TXT formats)
 
-Somatic data will be made available in a **somatics.tar** via GCP.
+Somatic data will be made available in a **somatics.tar.gz** via GCP[^1].
 
 ##### Per sample the following files are present:
 In the purple folder --
@@ -104,7 +104,7 @@ For an explanation of the contents of the linx. files, see [LINX](https://github
 
 ### Germline Data (VCF/TXT formats)
 
-Germline data will be made available in a **germline.tar** file via GCP.
+Germline data will be made available via GCP.
 
 We share the SNVs and small INDELs called from the reference sample using GATK haplotype caller.
 
@@ -142,3 +142,6 @@ COLO829v003T is a melanoma cell line that can be used for testing. The COLO829v0
 - For source code of all Hartwig Medical Foundation tools see our [hmftools repository](https://github.com/hartwigmedical/hmftools)
 - For an example patient report see our [resources page](https://resources.hartwigmedicalfoundation.nl/)
 - For various resource files used in the analysis see our [resources page](https://resources.hartwigmedicalfoundation.nl/)
+
+
+[^1]: After one month of the creation of a bucket, files in the bucket will be removed. On request, we can leave or make the data available for an extended period. After receipt of such a request, we will start making the licensed data available again within one workday. You can submit a request by sending an email to ict@hartwigmedicalfoundation.nl, mentioning your reference number. Note that you still retain continuous access to the files that are shared via manifest.json for the duration of the license agreement.
