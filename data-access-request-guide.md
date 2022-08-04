@@ -59,7 +59,7 @@ Clinical data will be made available in a **metadata.tsv** via GCP.
 Some notes about the clinical data:
 - As much information as possible from the Electronic Case Report Form (eCRF) of the respective clinical studies is gathered. Please be aware that records are not guaranteed to be complete.
 - For patients who participated in the DRUP study we can not share any treatment related information.
-- The "purity" field in the metadata is the percentage tumor cells derived from WGS data by [PURPLE](https://github.com/hartwigmedical/hmftools/tree/master/purity-ploidy-estimator).
+- The "purity" field in the metadata is the percentage tumor cells derived from WGS data by [PURPLE](https://github.com/hartwigmedical/hmftools/tree/master/purple).
 
 Please find more details on the methods used to generate both the genomic and clinical data on a separate [Methods](./data-access-request-methods.md) page.
 
@@ -81,7 +81,7 @@ In the purple folder --
 - purple.sv.vcf.gz + purple.sv.vcf.gz.tbi (somatic structural variants)
 - purple.version  (purple version used)
 
-For an explanation of the contents of the purple. files, see [PURPLE](https://github.com/hartwigmedical/hmftools/tree/master/purity-ploidy-estimator).  
+For an explanation of the contents of the purple. files, see [PURPLE](https://github.com/hartwigmedical/hmftools/tree/master/purple).  
 
 In the linx folder --
 - driver.catalog.tsv (reproduction of the driver catalog produced by PURPLE with homozygous disruptions events appended)
