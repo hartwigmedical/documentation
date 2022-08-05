@@ -22,7 +22,7 @@ Note: more details on the methods used to generate both the genomic and clinical
 ## General Notes
  - Please be aware that the sample IDs provided to you are not publicly shareable. In case you want to publish something with respect to a specific sample from the Hartwig Medical Foundation database you need to use the Hartwig Sample ID for this. For newer DRs these have been made available; for older requests these can be requested for the samples you have been provided. 
  - Internally at Hartwig, we load up all data into a MySQL database. The scheme and code to set this up yourself can be found on our [resources page](https://resources.hartwigmedicalfoundation.nl/).
- - After one month of the creation of a bucket, files in the bucket will be removed. On request, we can leave or make the data available for an extended period. After receipt of such a request, we will start making the licensed data available again within one workday. You can submit a request by sending an email to ict@hartwigmedicalfoundation.nl, mentioning your reference number. Note that you still retain continuous access to the files that are shared via manifest.json for the duration of the license agreement.
+ - After one month of the creation of a bucket, files in the bucket will be removed. On request, we can leave or make the data available for an extended period. After receipt of such a request, we will start making the licensed data available again within one workday. You can submit a request by sending an email to dataaccess@hartwigmedicalfoundation.nl, mentioning your reference number. Note that you still retain continuous access to the files that are shared via manifest.json for the duration of the license agreement.
 
 Please use the **unique ID** given to your request (eg. "DR-XXX") in any communication with us about your data request.
 
@@ -136,7 +136,7 @@ Some notes to keep in mind:
 
 ## Example data (COLO829v003T)
 
-COLO829v003T is a melanoma cell line that can be used for testing. The COLO829v003T somatic tar file (different pipeline versions) can be downloaded from our [resources page](https://nextcloud.hartwigmedicalfoundation.nl/s/LTiKTd8XxBqwaiC?path=%2FData-Access-Requests). We also have the COLO829v003T available on the Google Cloud Platform (somatic and germline tar file, and the cram files). To be added to the ACL of these files please send an email to ict@hartwigmedicalfoundation.nl including the GCP account the data should be made available for (please note this should be a GCP account set up with an institutional email address, see [Getting Started with Google Cloud Platform](./getting-a-Google-account.md)).
+COLO829v003T is a melanoma cell line that can be used for testing. The COLO829v003T somatic tar file (different pipeline versions) can be downloaded from our [resources page](https://nextcloud.hartwigmedicalfoundation.nl/s/LTiKTd8XxBqwaiC?path=%2FData-Access-Requests). We also have the COLO829v003T available on the Google Cloud Platform (somatic and germline tar file, and the cram files). To be added to the ACL of these files please send an email to dataaccess@hartwigmedicalfoundation.nl including the GCP account the data should be made available for (please note this should be a GCP account set up with an institutional email address, see [Getting Started with Google Cloud Platform](./getting-a-Google-account.md)).
 
 ## More information
 - For source code of our analysis pipeline see our [pipeline5 repository](https://github.com/hartwigmedical/pipeline5)
