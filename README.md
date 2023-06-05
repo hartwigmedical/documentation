@@ -2,7 +2,7 @@
 
 Welcome to Hartwig Medical Foundation's documentation site! 
 
-This page is meant as a resource to researchers who have requested access to our data. To get started on a data access request please visit our [website](https://www.hartwigmedicalfoundation.nl/en/applying-for-data/).
+This page is meant as a resource to researchers who have requested access to our data. To get started on a data access request please visit our [website](https://www.hartwigmedicalfoundation.nl/en/data/data-acces-request/).
 
 Here you'll find instructions on data access, data interpretation and data generation methods used within the Hartwig Medical Foundation.
 
