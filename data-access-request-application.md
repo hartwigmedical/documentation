@@ -15,7 +15,7 @@
 
 ## Overview and general instructions
 
-This guide is meant to help you fill in the Data Access Request application form via our BizzMine system. If you do not have an account yet and would like to get one to start your Hartwig Medical Foundation Data Access Request application, please see [our website](https://www.hartwigmedicalfoundation.nl/applying-for-data/) for the procedure to get started.
+This guide is meant to help you fill in the Data Access Request application form via our BizzMine system. If you do not have an account yet and would like to get one to start your Hartwig Medical Foundation Data Access Request application, please see [our website](https://www.hartwigmedicalfoundation.nl/en/data/data-acces-request/) for the procedure to get started.
 
 When you have set up an account for our BizzMine system, you can login to: https://dataaccess-hartwigmedicalfoundation.bizzmine.cloud. This brings you to the Data Access Request page. To start your Data Access Request, click the '+' button in the right corner of the screen. A new Data Access Request form will then be loaded and you can start filling out your application using the guidance below. 
 
@@ -136,4 +136,4 @@ As there is only one log in available for each request, we tend to see that the 
 If you are somehow running into problems while filling in your Data Access Request application, do not hesitate to [contact us](https://www.hartwigmedicalfoundation.nl/contact/). 
 
 ## More information about the procedure
-The most up-to-date information regarding the procedure of the Data Access Requests can be found on [our website](https://www.hartwigmedicalfoundation.nl/applying-for-data/).
+The most up-to-date information regarding the procedure of the Data Access Requests can be found on [our website](https://www.hartwigmedicalfoundation.nl/en/data/data-acces-request/).
