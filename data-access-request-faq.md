@@ -37,7 +37,7 @@ All our tools and code is publicly available on [our GitHub](https://github.com/
 <details>
 <summary>Can you help us with setting up a GCP account?</summary>
 
-We are not able to set the GCP account up for you, but we do have a preferred Google Partner that can help you out. To get the onboarding proces started with our preferred Google Partner, please visit [this webpage](https://www.fourcast.io/google-cloud-platform/onboarding-process-hmf). 
+We are not able to set the GCP account up for you. 
 General instructions on getting a GCP account can be found in our [Getting a Google account](https://hartwigmedical.github.io/documentation/getting-a-Google-account.html) instructions. If the instructions are somehow not working for you, please [contact us](https://www.hartwigmedicalfoundation.nl/en/contact-us/).
 </details>
 
