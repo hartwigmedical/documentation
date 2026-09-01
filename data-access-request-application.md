@@ -29,23 +29,23 @@ Please see our [Privacy Policy](https://www.hartwigmedicalfoundation.nl/en/priva
 
 ### Part 1: General aspects Data Request
 
-#### 1.2 Main applicant + requesting organisation details
-Please fill in the details of the main applicant (we see that this is usually the PI), this is the person that will be filling out the form. This person also needs to show that he/she is able to perform the proposed research project by showing some credentials in the form of a cv. In this section, please also fill in the details about the organisation with its legal entity that is requesting the data (the License Agreement will be signed on behalf of the legal entity, not on behalf of the main applicant).
+#### 1.2 Applicant + requesting organisation details
+Please fill in the details of the main applicant (we see that this is usually the PI), this is the person that will be filling out the form. This person also needs to show that he/she is able to perform the proposed research project by showing some credentials in the form of a cv. In this section, please also fill in the details about the organisation with its legal entity that is requesting the data (the Agreement will be signed on behalf of the legal entity, not on behalf of the main applicant).
 
 Besides the main applicant, we also need details of a person within the same organisation (and therefore legal entity) that is authorized to sign on behalf of the legal entity. 
 
 #### Multi-center request?
-Indicate that this is a multi centre request if you want to collaborate with another legal entity (institution/organisation) on the Hartwig Medical Foundation data. The same information (as described in previous paragraph) will be asked in the form for this second legal entity. The License Agreement that will be drafted when your Data Access Request is approved will enable both your institutes to work on the Hartwig Medical Foundation data. 
+Indicate that this is a multi centre request if you want to collaborate with another legal entity (institution/organisation) on the Hartwig Medical Foundation data. The same information (as described in previous paragraph) will be asked in the form for this second legal entity. The Agreement that will be drafted when your Data Access Request is approved will enable both your institutes to work on the Hartwig Medical Foundation data. 
 
 If you only wish to collaborate on the results of your analysis on the Hartwig Medical Foundation data, you can skip this section and specify the collaboration in section 4.1. 
 
 It is not possible to request data as a consortium, as this is no official 'legal entity'.
 
 #### 1.3 Name + function + email address of researchers involved in the Project
-Here you will need to list any persons that will be working with the data within the requirements of the License Agreement. Also check the boxes of the people that will have access to the Hartwig Medical Foundation data. These people will be registered as 'data sharing/download contacts' and are the only ones that are able to access the data within Google Cloud Platform (GCP). The Download Contacts need to create a GCP account on their institutional email address to get access to the data when the Data Access Request is approved.
+Here you will need to list any persons that will be working with the data within the requirements of the Agreement. Also check the boxes of the people that will have access to the Hartwig Medical Foundation data. These people will be registered as 'data sharing/download contacts' and are the only ones that are able to access the data within Google Cloud Platform (GCP). The Download Contacts need to create a GCP account on their institutional email address to get access to the data when the Data Access Request is approved.
 
 #### Data will be made available trough the Google Cloud Platform (GCP)
-When your Data Access Request is granted, we will need a valid GCP account for the authorised 'data sharing/download contact(s)' to be able to make the licensed data available. Here you can indicate if you wish any help to set up the GCP account.
+When your Data Access Request is granted, we will need a valid GCP account for the authorised 'data sharing/download contact(s)' to be able to make the data available. Here you can indicate if you wish any help to set up the GCP account.
 
 #### 1.4 Commercial party involvement
 Please indicate if a commercial party is involved in the research project and provide some additional information about the involvement.
@@ -115,7 +115,7 @@ Please motivate the choices you make above, as this again is taken into account 
 Please try to make an estimation of the number of patients that you will need to successfully complete your project. Also motivate this estimation. This gives us an indication of the feasibility of your project, using the Hartwig Medical Foundation data. When you send in your application, we will fill in the section 'Number of patients available' based on your patient selection and requirements. 
 
 #### 3.5 Time you expect to need the requested data for the project
-This again allows us to estimate the feasibility of your project and is also needed for drafting up the License Agreement (we will allow you access to the data for a limited number of years, appropriate to your project). 
+This again allows us to estimate the feasibility of your project and is also needed for drafting up the Agreement (we will allow you access to the data for a limited number of years, appropriate to your project). 
 
 ### Part 4: Research context
 This section is needed for us to get an insight in the feasibility of your project. Please fill in the details. 
