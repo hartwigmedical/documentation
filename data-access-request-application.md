@@ -30,9 +30,9 @@ Please see our [Privacy Policy](https://www.hartwigmedicalfoundation.nl/en/priva
 ### Part 1: General aspects Data Request
 
 #### 1.2 Applicant + requesting organisation details
-Please fill in the details of the main applicant (we see that this is usually the PI), this is the person that will be filling out the form. This person also needs to show that he/she is able to perform the proposed research project by showing some credentials in the form of a cv. In this section, please also fill in the details about the organisation with its legal entity that is requesting the data (the Agreement will be signed on behalf of the legal entity, not on behalf of the main applicant).
+Please fill in the details of the applicant (we see that this is usually the PI), this is the person that will be filling out the form. This person also needs to show that he/she is able to perform the proposed research project by showing some credentials in the form of a cv. In this section, please also fill in the details about the organisation with its legal entity that is requesting the data (the Agreement will be signed on behalf of the legal entity, not on behalf of the applicant).
 
-Besides the main applicant, we also need details of a person within the same organisation (and therefore legal entity) that is authorized to sign on behalf of the legal entity. 
+Besides the applicant, we also need details of a person within the same organisation (and therefore legal entity) that is authorized to sign on behalf of the legal entity. 
 
 #### Multi-center request?
 Indicate that this is a multi centre request if you want to collaborate with another legal entity (institution/organisation) on the Hartwig Medical Foundation data. The same information (as described in previous paragraph) will be asked in the form for this second legal entity. The Agreement that will be drafted when your Data Access Request is approved will enable both your institutes to work on the Hartwig Medical Foundation data. 
@@ -130,7 +130,7 @@ Make sure to read the documentation that is stated in this section before agreei
 
 ### Part 7: Signing
 This section will only be available after your application is reviewed and approved for starting the official reviewing by our Scientific Board and Data Access Board. 
-As there is only one log in available for each request, we tend to see that the main applicant lets other involved persons sign on their device. If you are experiencing problems signing, please [contact us](https://www.hartwigmedicalfoundation.nl/contact/).
+As there is only one log in available for each request, we tend to see that the applicant lets other involved persons sign on their device. If you are experiencing problems signing, please [contact us](https://www.hartwigmedicalfoundation.nl/contact/).
 
 ## Running into problems
 If you are somehow running into problems while filling in your Data Access Request application, do not hesitate to [contact us](https://www.hartwigmedicalfoundation.nl/contact/). 
