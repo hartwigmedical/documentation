@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!--
+  ORANGE Report — User Guide
+  ==========================
+
+  *** index.html is GENERATED. Do not edit it — your changes will be lost. ***
+
+  Edit one chapter file, then rebuild:
+
+      sections/05-somatic-variants.html      <- edit this
+      python3 build.py                       <- then this
+
+  Layout
+    layout/head.html            this preamble, <head>, sidebar, hero
+    layout/foot.html            footer, lightbox, <script> tag
+    sections/NN-name.html       one chapter each; NN sets the order
+    assets/css/guide.css        all styling; brand tokens in section 1
+    assets/js/guide.js          nav, search, lightbox; no dependencies
+    assets/img/NN-name/         figures, folder name matches its section file
+    assets/img/brand/           Hartwig Medical Foundation logo
+    build.py                    concatenate + validate
+    README.md                   how to edit, add figures, add chapters
+
+  Markup conventions
+    <section class="sect" id="x">  a chapter — the sidebar nav and search index
+                                   are generated from these and their <h3 id="">
+    <details class="term">         info box: report field / terminology
+    <details class="term concept"> info box: biology & clinical context
+    <details class="term algo">    info box: formula or decision rule
+    <details class="faq">          FAQ / troubleshooting entry
+    <div class="cal note|tip|warn|stop|mode">    callout
+    <span class="b wgs|panel|rna|tn|to|hi|lo">   availability / driver badge
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ORANGE Report — User Guide (oncoanalyser v3.0.0)</title>
+<meta name="description" content="Interactive user guide to the Hartwig Medical Foundation ORANGE Report produced by oncoanalyser, with info boxes for terms and concepts and links to hmftools documentation.">
+<meta name="theme-color" content="#16337F">
+
+<!-- Link previews. Every path below is relative, so the guide works unchanged
+     from a file:// path, an internal server, or any GitHub Pages subfolder.
+
+     og:url and og:image are the only tags that need an absolute URL. Once the
+     published address is fixed, uncomment these two and fill in the base:
+
+     <link rel="canonical" href="https://ORG.github.io/REPO/PATH/">
+     <meta property="og:url" content="https://ORG.github.io/REPO/PATH/">
+     <meta property="og:image" content="https://ORG.github.io/REPO/PATH/assets/img/brand/hmf-logo.png"> -->
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Hartwig Medical Foundation">
+<meta property="og:title" content="The ORANGE Report — User Guide">
+<meta property="og:description" content="A section-by-section guide to reading the PDF that oncoanalyser produces for every sample — what each field means, which tool computed it, and where the thresholds come from.">
+<meta name="twitter:card" content="summary">
+
+<link rel="icon" href="assets/img/brand/hmf-logo.png">
+<link rel="stylesheet" href="assets/css/guide.css">
+</head>
+<body>
+<div id="burger" role="button" tabindex="0" aria-label="Toggle navigation">&#9776;</div>
+
+<div id="shell">
+<aside id="sidebar">
+  <div class="sb-brand">
+    <img src="assets/img/brand/hmf-logo.png" width="1950" height="686" alt="Hartwig Medical Foundation">
+    <div class="title">ORANGE Report &mdash; User Guide</div>
+    <div class="sub">oncoanalyser v3.0.0</div>
+  </div>
+  <div class="sb-search">
+    <input type="search" id="q" placeholder="Search the guide&hellip;" autocomplete="off" spellcheck="false" aria-label="Search the guide">
+  </div>
+  <nav id="nav" aria-label="Contents"></nav>
+</aside>
+
+<main id="main">
+<div class="hero">
+  <div class="motif" aria-hidden="true">
+    <i style="height:34%"></i><i class="r" style="height:56%"></i><i style="height:80%"></i>
+    <i class="r" style="height:64%"></i><i style="height:26%"></i>
+  </div>
+  <div class="eyebrow"><b>Hartwig Medical Foundation</b> &middot; Research Use Only</div>
+  <h1>The ORANGE Report</h1>
+  <p class="lede">A section-by-section guide to reading the PDF that <b>oncoanalyser</b> produces for every sample &mdash; what each field means, which tool computed it, and where the thresholds come from.</p>
+  <div class="meta">
+    <span>oncoanalyser v3.0.0</span><span>ORANGE</span><span>WiGiTS / hmftools</span><span>Updated 28 Jul 2026</span><span>HMFAUS-DOC-22 v1.0</span>
+  </div>
+</div>
+<div id="nores">No sections match that search.</div>

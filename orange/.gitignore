@@ -1,0 +1,17 @@
+# macOS Finder metadata — never belongs in a published site
+.DS_Store
+._*
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Per-machine tool settings
+.claude/settings.local.json
+
+# Editor / OS cruft
+*.swp
+*~
+.idea/
+.vscode/
+Thumbs.db
