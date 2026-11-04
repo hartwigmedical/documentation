@@ -124,6 +124,8 @@ We suggest using the [pricing calculator](https://cloud.google.com/products/calc
 - Using a 32cpu 120GB virtual machine for one hour will cost about $1.60/€1.42 or $0.30/€0.27 if pre-emptible
 - Storing 1TB of data for a month will cost about $20/€18
 - Downloading 1TB of data to a local server will cost about $120/€106
+- A rough estimate for one set of DNA tumor and normal CRAM files is 120 GB. The approximate download cost per tumor-normal DNA pair is 15 euro.
+- A rough estimate for one RNA tumor FASTQ file is 16 GB. The approximate download cost is 2 euro.
 - Aligning 100 samples sequenced to 90x with BWA and storing CRAM for 1 year costs approximately $3100/€2755 (~$700/€622 for the compute and $2400/€2133 storage)
 
 ### Privacy and Security
